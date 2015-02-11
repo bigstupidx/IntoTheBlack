@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 54920e834f52276479bc5777dacf5fd6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 ArmL
+    100004: Bip001 ArmL02
+    100006: Bip001 ArmL03
+    100008: Bip001 ArmL04
+    100010: Bip001 ArmLNub
+    100012: Bip001 ArmR
+    100014: Bip001 ArmR02
+    100016: Bip001 ArmR03
+    100018: Bip001 ArmR04
+    100020: Bip001 ArmRNub
+    100022: Bip001 BellyBoneL
+    100024: Bip001 BellyBoneL02
+    100026: Bip001 BellyBoneL03
+    100028: Bip001 BellyBoneLNub
+    100030: Bip001 BellyBoneR
+    100032: Bip001 BellyBoneR02
+    100034: Bip001 BellyBoneR03
+    100036: Bip001 BellyBoneRNub
+    100038: Bip001 Footsteps
+    100040: Bip001 Head
+    100042: Bip001 HeadNub
+    100044: Bip001 HipBone
+    100046: Bip001 HipBone02
+    100048: Bip001 HipBone03
+    100050: Bip001 HipBoneNub
+    100052: Bip001 L Calf
+    100054: Bip001 L Foot
+    100056: Bip001 L Thigh
+    100058: Bip001 L Toe0
+    100060: Bip001 L Toe0Nub
+    100062: Bip001 Neck
+    100064: Bip001 Pelvis
+    100066: Bip001 Ponytail1
+    100068: Bip001 Ponytail1Nub
+    100070: Bip001 R Calf
+    100072: Bip001 R Foot
+    100074: Bip001 R Thigh
+    100076: Bip001 R Toe0
+    100078: Bip001 R Toe0Nub
+    100080: Bip001 Spine
+    100082: Bip001 Tail
+    100084: Bip001 Tail1
+    100086: Bip001 Tail10
+    100088: Bip001 Tail11
+    100090: Bip001 Tail12
+    100092: Bip001 Tail13
+    100094: Bip001 Tail2
+    100096: Bip001 Tail3
+    100098: Bip001 Tail4
+    100100: Bip001 Tail5
+    100102: Bip001 Tail6
+    100104: Bip001 Tail7
+    100106: Bip001 Tail8
+    100108: Bip001 Tail9
+    100110: Bip001 TailNub
+    100112: Dragon Fish
+    100114: //RootNode
+    400000: Bip001
+    400002: Bip001 ArmL
+    400004: Bip001 ArmL02
+    400006: Bip001 ArmL03
+    400008: Bip001 ArmL04
+    400010: Bip001 ArmLNub
+    400012: Bip001 ArmR
+    400014: Bip001 ArmR02
+    400016: Bip001 ArmR03
+    400018: Bip001 ArmR04
+    400020: Bip001 ArmRNub
+    400022: Bip001 BellyBoneL
+    400024: Bip001 BellyBoneL02
+    400026: Bip001 BellyBoneL03
+    400028: Bip001 BellyBoneLNub
+    400030: Bip001 BellyBoneR
+    400032: Bip001 BellyBoneR02
+    400034: Bip001 BellyBoneR03
+    400036: Bip001 BellyBoneRNub
+    400038: Bip001 Footsteps
+    400040: Bip001 Head
+    400042: Bip001 HeadNub
+    400044: Bip001 HipBone
+    400046: Bip001 HipBone02
+    400048: Bip001 HipBone03
+    400050: Bip001 HipBoneNub
+    400052: Bip001 L Calf
+    400054: Bip001 L Foot
+    400056: Bip001 L Thigh
+    400058: Bip001 L Toe0
+    400060: Bip001 L Toe0Nub
+    400062: Bip001 Neck
+    400064: Bip001 Pelvis
+    400066: Bip001 Ponytail1
+    400068: Bip001 Ponytail1Nub
+    400070: Bip001 R Calf
+    400072: Bip001 R Foot
+    400074: Bip001 R Thigh
+    400076: Bip001 R Toe0
+    400078: Bip001 R Toe0Nub
+    400080: Bip001 Spine
+    400082: Bip001 Tail
+    400084: Bip001 Tail1
+    400086: Bip001 Tail10
+    400088: Bip001 Tail11
+    400090: Bip001 Tail12
+    400092: Bip001 Tail13
+    400094: Bip001 Tail2
+    400096: Bip001 Tail3
+    400098: Bip001 Tail4
+    400100: Bip001 Tail5
+    400102: Bip001 Tail6
+    400104: Bip001 Tail7
+    400106: Bip001 Tail8
+    400108: Bip001 Tail9
+    400110: Bip001 TailNub
+    400112: Dragon Fish
+    400114: //RootNode
+    4300000: Dragon Fish
+    7400000: Take 001
+    7400002: swim
+    7400004: swim fast
+    7400006: attack 1
+    7400008: attack 2
+    7400010: spit
+    7400012: hit
+    7400014: death
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Dragon Fish
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: swim
+      takeName: 
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: swim fast
+      takeName: 
+      firstFrame: 49
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack 1
+      takeName: 
+      firstFrame: 75
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack 2
+      takeName: 
+      firstFrame: 124
+      lastFrame: 169
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: spit
+      takeName: 
+      firstFrame: 173
+      lastFrame: 203
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hit
+      takeName: 
+      firstFrame: 207
+      lastFrame: 229
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: death
+      takeName: 
+      firstFrame: 231
+      lastFrame: 382
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

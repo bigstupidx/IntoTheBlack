@@ -1,0 +1,10 @@
+<DialogCollection>
+    <Dialogs>
+        <Dialog id="1" name="captain">
+        	<Talk>인류의 미래를 건 여정</Talk>
+        </Dialog>
+        <Dialog id="2" name="engineer">
+        	<Talk>우주 먼지를 이용해 탐사선의 성능을 빨리 향상 시켜야 겠군요.</Talk>
+        </Dialog>
+    </Dialogs>
+</DialogCollection>

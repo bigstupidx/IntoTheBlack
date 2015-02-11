@@ -1,0 +1,6 @@
+lastUpgrade=00910
+proj.AppId=394546854346
+android.SetupDone=true
+ios.ClientId=394546854346-f63d67ho3pq7i1hdj68j0p7kte533pk8.apps.googleusercontent.com
+ios.BundleId=com.KdragonStudio.IntotheBlack
+ios.SetupDone=true

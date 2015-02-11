@@ -1,0 +1,113 @@
+<DialogCollection>
+    <Dialogs>
+        <Dialog id="0" pilot="1">
+        	<Talk>나로 우주센터~, 고흥군 봉래면 봉래면~ 도로명 주소로 하반로?? 아무튼 우리는 우주 공간에 무사히 진입했다. 지구에 남은 여러분에게…행운이 있기를 바란다. 도로명 주소탓에 우주 식량이 몇 개 도착 안 한 것 같다.</Talk>
+        </Dialog>
+        <Dialog id="1" pilot="2">
+            <Talk>와아! 내가 정말 이렇게 우주 비행할 줄은 몰랐는데~ 아버지 해냈어요!</Talk>
+        </Dialog>
+        <Dialog id="2" pilot="1">
+            <Talk>우주 공간은 아름답지만 광활합니다. 달까지도 이렇게 먼 줄 몰랐죠?</Talk>
+        </Dialog>     
+        <Dialog id="3" pilot="3">
+            <Talk>테스트 탐사선이 땅콩 하나 때문에 회항한 사건 있었죠? 우리 탐사선이 여기서 돌아갈 일은 없겠죠?</Talk>
+        </Dialog>       
+        <Dialog id="4" pilot="2">
+            <Talk>누군가 말했죠. Stay Hungry, Stay Foolish~ 배고픈 건 조금 더 참아보세요.</Talk>
+        </Dialog>       
+        <Dialog id="5" pilot="3">
+            <Talk>식량이 얼마나 유지될지 재계산 중이에요.</Talk>
+        </Dialog>       
+        <Dialog id="6" pilot="1">
+            <Talk>세계 정부가 틀린 판단을 했어요. 왜 옥수수 종 보존에 그렇게 과도하게 투자했는지….</Talk>
+        </Dialog>       
+        <Dialog id="7" pilot="2">
+        	<Talk>정부에서 옥수수가 가장 생존력이 좋다고 말했었는데요?</Talk>
+        </Dialog>
+        <Dialog id="8" pilot="3">
+        	<Talk>영양학적으로 더 나은 작물이 많았는데 옥수수를 선택하는 바람에 전염병 피해가 더 컸죠.</Talk>
+        </Dialog>
+        <Dialog id="9" pilot="1">
+        	<Talk>프리벨이 말했죠. 여행은 세상에서 인간이 차지하는 영역이 얼마나 작은 것인가를 깨닫게 해준다.</Talk>
+        </Dialog>
+        <Dialog id="10" pilot="2">
+        	<Talk>지구를 떠나서 제일 좋은 건, 정치인이 나오는 뉴스를 보지 않게 된 거예요.</Talk>
+        </Dialog>
+        <Dialog id="11" pilot="2">
+        	<Talk>사라 윌리엄스가 말했죠. 나는 별을 너무나 사랑하므로 밤을 두려워하지 않는다.</Talk>
+        </Dialog>
+        <Dialog id="12" pilot="2">
+        	<Talk>우주에 얼마나 머물렀는지 모르겠습니다. 이제 당신 얼굴도 처음보다 느끼하지 않아요.</Talk>
+        </Dialog>
+        <Dialog id="13" pilot="3">
+        	<Talk>과연 지구에 남은 사람들은 생존 방법을 찾아낼까요?</Talk>
+        </Dialog>
+        <Dialog id="14" pilot="2">
+            <Talk>지구에서 식품 삼을 수 있는 생물종은 거의 다 멸종했어요. 합성 식품도…. 믿고 먹을게 없는 세상이죠.</Talk>
+        </Dialog>
+        <Dialog id="15" pilot="2">
+            <Talk>빌리 선데이가 말했죠. 많은 사람이 재능의 부족보다 결심의 부족으로 실패 한다.</Talk>
+        </Dialog>
+        <Dialog id="16" pilot="1">
+            <Talk>둘이 이상한 눈짓할 거면, 나는 우주선 엔진을 5분간 응시하다가 올게요.</Talk>
+        </Dialog>
+        <Dialog id="17" pilot="4">
+            <Talk>여러분~ 잘자요~~~</Talk>
+        </Dialog>
+        <Dialog id="18" pilot="1">
+            <Talk>원하는 일을 한다는 것이 무척 부럽군요 아뇨, 그저 싫어하는 일을 하지않는 것 뿐이죠 -카모메 식당-</Talk>
+        </Dialog>
+        <Dialog id="19" pilot="4">
+            <Talk>당신을 사랑하기 때문에 사랑하는게 아니라, 당신을 사랑할 수 밖에 없기때문에 사랑하는 것입니다 -로맨틱, 성공적-</Talk>
+        </Dialog>
+        <Dialog id="20" pilot="2">
+            <Talk>꿈이 있다면, 그걸 지켜야 돼. 사람들은 자기가 하지 못하는 것을 너도 할 수 없다고 말할꺼야. -행복을 찾아서-</Talk>
+        </Dialog>
+        <Dialog id="21" pilot="2">
+            <Talk>있잖아, 어렸을 땐.. 내가 지금 나이쯤 되면 굉장히 멋있는 여자가 되어 있을 줄 알았어. -나의 PS파트너-</Talk>
+        </Dialog>
+        <Dialog id="22" pilot="3">
+            <Talk>가끔 라디오에서 좋은 노래가 나올 때가 있어. 노래를 듣고 나선 들은 것만으로 행복해지기도 해. \n 만약 평생동안 듣고 싶은 노래가 있다면, 넌 그런 노래일 거야...</Talk>
+        </Dialog>
+        <Dialog id="23" pilot="1">
+            <Talk>언제까지나 기다릴거예요.. 그것이 운명이라 해도.. 운명을 넘어서 영원히.. -가을의 전설-</Talk>
+        </Dialog>
+        <Dialog id="24" pilot="3">
+            <Talk>때로는 다른사람말 들을 필요없어. 네 자신을 들어야 해 -옥토버스카이-</Talk>
+        </Dialog>
+        <Dialog id="25" pilot="4">
+            <Talk>넌 유죄야... 도대체 내가 무슨 죄를 지었단 말입니까?... 인생을 낭비한 죄... -빠삐용-</Talk>
+        </Dialog>
+        <Dialog id="26" pilot="4">
+            <Talk>큰 문제가 생기면 가슴에 대고 얘기하는 거야. 알 이즈 웰 -세얼간이-</Talk>
+        </Dialog>
+        <Dialog id="27" pilot="3">
+            <Talk>너희들은 내일을 보고살아가지? 나는 오늘을보고살아간다. \n 그게 얼마나 끔찍한지 보여주겠어 -아저씨-</Talk>
+        </Dialog>
+        <Dialog id="28" pilot="3">
+            <Talk>난 키스하고, 죽는다. -로미오 와 줄리엣-</Talk>
+        </Dialog>
+        <Dialog id="29" pilot="3">
+            <Talk>사랑을 이야기할때 늦었다는 말은 없소</Talk>
+        </Dialog>
+        <Dialog id="30" pilot="2">
+            <Talk>어디로 가고 싶어요? 아무데나.. 당신 가고싶은 곳으로 -중경삼림-</Talk>
+        </Dialog>
+        <Dialog id="31" pilot="3">
+            <Talk>3시 1분전 우리가 함께한 이 시간을 영원히 기억하겠소 -아비정전-</Talk>
+        </Dialog>
+        <Dialog id="32" pilot="2">
+            <Talk>전 지금 사랑에 빠졌어요. 너무 아파요. 그런데 계쏙 아프고 싶어요 -연애소설-</Talk>
+        </Dialog>
+        <Dialog id="33" pilot="3">
+            <Talk>유머있는 남자가 좋아? 우수에 젖은 남자? 스마트한 남자? 미신적인 남자? 용감한 남자? 아님 춤 잘 추는 남자? 뭐든 말만 해. 말만하면 다 되줄게. -Notebook-</Talk>
+        </Dialog>
+        <Dialog id="34" pilot="3">
+            <Talk>세상은 날 삼류라 하고, 그 여자는 날 사랑이라 한다 -파이란-</Talk>
+        </Dialog>
+        <Dialog id="35" pilot="4">
+            <Talk>나를 말해주는 건 지금의 나의 행동이지 -Batman Begins-</Talk>
+        </Dialog>
+
+    </Dialogs>
+</DialogCollection>
