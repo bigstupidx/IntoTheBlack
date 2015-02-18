@@ -42,7 +42,7 @@ public class AdmobManager : MonoBehaviour
 
 	IEnumerator BannerLoop()
 	{
-		yield return new WaitForSeconds(30f);
+		yield return new WaitForSeconds(20f);
 			banner = new BannerView("ca-app-pub-7143280300027830/7400835709", AdSize.SmartBanner, AdPosition.Top);
 			AdRequest request = new AdRequest.Builder().Build();
 			
@@ -57,7 +57,7 @@ public class AdmobManager : MonoBehaviour
 
 		while(GameController.isVip !=1)
 		{
-			yield return new WaitForSeconds(300f);
+			yield return new WaitForSeconds(60f);
 				if(Advertisement.isReady() && GameController.isVip !=1)
 				{
 					Advertisement.Show();

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BlackHole" xml:space="preserve">
+		<value>블랙홀을 클릭하면 엔진 속도의 10 배 거리만큼 텔레포트 합니다.</value>
+	</data>
+	<data name="Menu.Album" xml:space="preserve">
+		<value>별자리앨범</value>
+	</data>
+	<data name="Menu.Message" xml:space="preserve">
+		<value>우주메시지</value>
+	</data>
+	<data name="Menu.Setting" xml:space="preserve">
+		<value>설정</value>
+	</data>
+	<data name="Menu.Sns" xml:space="preserve">
+		<value>업적자랑</value>
+	</data>
+	<data name="Menu.Store" xml:space="preserve">
+		<value>우주상점</value>
+	</data>
+	<data name="Menu.Upgrade" xml:space="preserve">
+		<value>업그레이드</value>
+	</data>
+	<data name="Store.Product1Result" xml:space="preserve">
+		<value>당신은 제 마음속에 영원한 VIP 입니다.
+골드가 2 배 획득됩니다. 광고가 제거 되었습니다.</value>
+	</data>
+	<data name="Store.Product2Result" xml:space="preserve">
+		<value>금성과 수성이 추가 되었습니다.</value>
+	</data>
+	<data name="Store.Result1" xml:space="preserve">
+		<value>당신은 진짜 멋진 스페이스 카우보이 입니다. </value>
+	</data>
+	<data name="Store.Result2" xml:space="preserve">
+		<value>이것은 개발자의 100 퍼센트의 노력으로 만들어 졌습니다.</value>
+	</data>
+	<data name="Store.Result3" xml:space="preserve">
+		<value>럭셔리 우주선으로 좋은 여행을 기대합니다.</value>
+	</data>
+	<data name="Store.Result4" xml:space="preserve">
+		<value>구입해 주셔서 감사합니다. 
+다음 번에 더 나은 게임을 만들겟습니다.</value>
+	</data>
+	<data name="UI.Accel" xml:space="preserve">
+		<value>배 가속</value>
+	</data>
+	<data name="UI.AlbumDesc" xml:space="preserve">
+		<value>별자리를 10 개씩 모을때마다 엔진 업그레이드 단계가 증가 합니다.</value>
+	</data>
+	<data name="UI.AlbumTitle" xml:space="preserve">
+		<value>별자리 앨범</value>
+	</data>
+	<data name="UI.AutoPlay" xml:space="preserve">
+		<value>자동 실행</value>
+	</data>
+	<data name="UI.BGM" xml:space="preserve">
+		<value>배경음</value>
+	</data>
+	<data name="UI.Close" xml:space="preserve">
+		<value>닫기</value>
+	</data>
+	<data name="UI.ColonyComplete" xml:space="preserve">
+		<value>지구와 비슷한 새로운 식민지가 완성되었습니다.</value>
+	</data>
+	<data name="UI.ColonyProgress" xml:space="preserve">
+		<value>식민지 진행률</value>
+	</data>
+	<data name="UI.Credit" xml:space="preserve">
+		<value>만든 사람들</value>
+	</data>
+	<data name="UI.EffectSound" xml:space="preserve">
+		<value>효과음</value>
+	</data>
+	<data name="UI.Engine" xml:space="preserve">
+		<value>엔진</value>
+	</data>
+	<data name="UI.EngineCondition" xml:space="preserve">
+		<value>다음 레벨 별자리를 모두 수집 해야 합니다.</value>
+	</data>
+	<data name="UI.EngineUpgrade" xml:space="preserve">
+		<value>엔진을 업그레이드 합니다.
+우주선 속도 증가.</value>
+	</data>
+	<data name="UI.GoogleAchievement" xml:space="preserve">
+		<value>Google 업적 확인</value>
+	</data>
+	<data name="UI.GoogleLeader" xml:space="preserve">
+		<value>Google 리더보드 확인</value>
+	</data>
+	<data name="UI.Hero" xml:space="preserve">
+		<value>영웅</value>
+	</data>
+	<data name="UI.JourneyDistance" xml:space="preserve">
+		<value>여행 거리</value>
+	</data>
+	<data name="UI.JourneyTime" xml:space="preserve">
+		<value>여행 시간</value>
+	</data>
+	<data name="UI.Keepgoing" xml:space="preserve">
+		<value>게임이 실행중이지 않을때에도 당신의 우주선은 계속 여행을 합니다.</value>
+	</data>
+	<data name="UI.Legend" xml:space="preserve">
+		<value>전설</value>
+	</data>
+	<data name="UI.Locked" xml:space="preserve">
+		<value>잠김</value>
+	</data>
+	<data name="UI.NextDestination" xml:space="preserve">
+		<value>다음 목적지</value>
+	</data>
+	<data name="UI.No" xml:space="preserve">
+		<value>아니요</value>
+	</data>
+	<data name="UI.Normal" xml:space="preserve">
+		<value>일반</value>
+	</data>
+	<data name="UI.PresstoStart" xml:space="preserve">
+		<value>터치하면 시작합니다.</value>
+	</data>
+	<data name="UI.Product1" xml:space="preserve">
+		<value>VIP 특전 (광고 지우고 골드 2배) - 1,000 원</value>
+	</data>
+	<data name="UI.Product1Desc" xml:space="preserve">
+		<value>광고가 제거되며, 운석 파괴 골드 획득이 2 배가 됩니다.</value>
+	</data>
+	<data name="UI.Product2" xml:space="preserve">
+		<value>수성, 금성 윙맨 패키지 (오토샷) - 3,000 원</value>
+	</data>
+	<data name="UI.Product2Desc" xml:space="preserve">
+		<value>갈수 없는 수성과 금성의 아쉬움을 화끈한 윙맨으로 달래 보세요.
+탐사선의 옆을 든든히 지켜줍니다.</value>
+	</data>
+	<data name="UI.Product3" xml:space="preserve">
+		<value>골드 한번 사볼까? (1만 골드) - 1,000 원</value>
+	</data>
+	<data name="UI.Product4" xml:space="preserve">
+		<value>커피한잔 보다 뿌듯함 (5만 골드) - 3,000 원</value>
+	</data>
+	<data name="UI.Product5" xml:space="preserve">
+		<value>담배 끊고 우주로 (10만 골드) - 5,000 원</value>
+	</data>
+	<data name="UI.Product6" xml:space="preserve">
+		<value>우주에서라도 부자 되기 (25만 골드) - 9000원</value>
+	</data>
+	<data name="UI.QuitGame" xml:space="preserve">
+		<value>Google 리더보드 확인</value>
+	</data>
+	<data name="UI.Restart" xml:space="preserve">
+		<value>처음부터 다시 시작</value>
+	</data>
+	<data name="UI.Reward" xml:space="preserve">
+		<value>보상</value>
+	</data>
+	<data name="UI.SettingTitle" xml:space="preserve">
+		<value>설정</value>
+	</data>
+	<data name="UI.ShipSpeed" xml:space="preserve">
+		<value>우주선 속도</value>
+	</data>
+	<data name="UI.ShotUpgrade" xml:space="preserve">
+		<value>무기를 업그레이 드 합니다.
+무기의 공격력이 증가 됩니다.</value>
+	</data>
+	<data name="UI.SNSFacebook" xml:space="preserve">
+		<value>페이스 북 친구와 여행을 공유합니다</value>
+	</data>
+	<data name="UI.SNSTitle" xml:space="preserve">
+		<value>SNS</value>
+	</data>
+	<data name="UI.StoreThanks" xml:space="preserve">
+		<value>구매가 성공하였습니다.
+구입해 주셔서 감사합니다.</value>
+	</data>
+	<data name="UI.StoreTitle" xml:space="preserve">
+		<value>우주에서 가장 저렴한 상점에 오신걸 환영 합니다.</value>
+	</data>
+	<data name="UI.Time" xml:space="preserve">
+		<value>시간</value>
+	</data>
+	<data name="UI.TimeCondition" xml:space="preserve">
+		<value>달에 도착 해야 합니다.</value>
+	</data>
+	<data name="UI.TimeUpgrade" xml:space="preserve">
+		<value>시간을 가속 합니다. 
+모든 계산이 시간 배수 만큼 빨라 집니다.</value>
+	</data>
+	<data name="UI.UpgradeTitle" xml:space="preserve">
+		<value>우주선 업그레이드</value>
+	</data>
+	<data name="UI.Weapon" xml:space="preserve">
+		<value>무기</value>
+	</data>
+	<data name="UI.Yes" xml:space="preserve">
+		<value>예</value>
+	</data>
+</root>

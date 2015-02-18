@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Text;
+using SmartLocalization;
 
 public class PanelTop : MonoBehaviour 
 {
@@ -18,7 +19,8 @@ public class PanelTop : MonoBehaviour
 	private float leftDistance;
 
 	private string _speedFormat;
-	private string[] _timeFormat;
+	private string _timeFormat1;
+	private string _timeFormat2;
 	private string _distanceFormat;
 	private string _unit;
 	private string _next;
@@ -28,6 +30,9 @@ public class PanelTop : MonoBehaviour
 	private double years =0, days=0;
 
 //	private float tempDustPoints;
+
+	public Text colonyText;
+	public Slider colonySlider;
 
 	public Slider nextSlider;
 
@@ -45,12 +50,31 @@ public class PanelTop : MonoBehaviour
 	void Start()
 	{
 //		tempDustPoints = 0;
-		_speedFormat = " Km/h [탐사선 속도] ";
-		_timeFormat = new string[2] {"[여행 시간] [", " 배 가속중] "};
-		_distanceFormat = " [여행 거리] ";
-		_unit = " Km";
-		_next = " 까지";
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
+		sb.Length = 0;
+		sb.AppendFormat(" Km/h [{0}] ", thisLanguageManager.GetTextValue("UI.ShipSpeed"));
+		_speedFormat = sb.ToString();
+
+		sb.Length = 0;
+		sb.AppendFormat("[{0}] [", thisLanguageManager.GetTextValue("UI.JourneyTime"));
+		_timeFormat1 = sb.ToString();
+
+		sb.Length = 0;
+		sb.AppendFormat(" {0}]", thisLanguageManager.GetTextValue("UI.Accel"));
+		_timeFormat2 = sb.ToString();
+
+		sb.Length = 0;
+		sb.AppendFormat("[{0}] ", thisLanguageManager.GetTextValue("UI.JourneyDistance"));
+		_distanceFormat = sb.ToString();
+
+		_unit = " Km";
+
+		sb.Length = 0;
+		sb.AppendFormat("[{0}] ", thisLanguageManager.GetTextValue("UI.NextDestination"));
+		_next = sb.ToString();
+
+		colonyText.text = thisLanguageManager.GetTextValue("UI.ColonyProgress");
 	}
 
 	void Update () 
@@ -99,7 +123,7 @@ public class PanelTop : MonoBehaviour
 		t = System.TimeSpan.FromSeconds(GameController.journeyTime);
 
 		sb.Length = 0;
-		sb.AppendFormat("{0:N0}Days {1:D}h:{2:D}m:{3:D}s{4}{5}{6}", days,t.Hours, t.Minutes, t.Seconds, _timeFormat[0], GameController.timeLevel, _timeFormat[1]);
+		sb.AppendFormat("{0:N0}Days {1:D}h:{2:D}m:{3:D}s{4}{5}{6}", days,t.Hours, t.Minutes, t.Seconds, _timeFormat1, GameController.timeLevel, _timeFormat2);
 		journeyTimeText.text = sb.ToString();
 
 		// timerFormatted = string.Format("{0:N0}Days {1:D}h:{2:D}m:{3:D}s{4}{5}{6}", days,t.Hours, t.Minutes, t.Seconds, _timeFormat[0], GameController.timeLevel, _timeFormat[1]);
@@ -122,6 +146,7 @@ public class PanelTop : MonoBehaviour
 
 		// it is overwork in update cycle.. i wish to improve it.
 		nextSlider.value = 1 - (leftDistance / GameController.distanceToNext);
+		colonySlider.value = GameController.colonyProgress;
 
 	}
 

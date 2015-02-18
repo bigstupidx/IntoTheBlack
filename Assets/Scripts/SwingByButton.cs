@@ -29,7 +29,7 @@ public class SwingByButton : MonoBehaviour
 
 		if (GameController.isSwingByCharged | GameController.ingSwing)
 		{
-			swingByTime.text = string.Concat (GameController.swingByTime.ToString("N0"), " 초");
+			swingByTime.text = string.Concat (GameController.swingByTime.ToString("N0"), " sec");
 		}
 
 		if (!GameController.isSwingByCharged && !GameController.ingSwing)

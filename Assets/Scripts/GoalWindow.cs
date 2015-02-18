@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using SmartLocalization;
 
 public class GoalWindow : MonoBehaviour
 {
@@ -11,4 +12,12 @@ public class GoalWindow : MonoBehaviour
 
 	public Animator windowAni;
 	public Image rewardImage;
+
+	public Text close;
+
+	void Start()
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		close.text = thisLanguageManager.GetTextValue("UI.Close");
+	}
 }

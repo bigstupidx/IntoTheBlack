@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using PathologicalGames;
+using SmartLocalization;
 
 public class AlienPop : MonoBehaviour
 {
@@ -20,13 +21,16 @@ public class AlienPop : MonoBehaviour
 	private int maxHealth;
 	private int health;
 	private int shieldHealth;
-	private int immune;
+//	private int immune;
 	private int reward;
 	private float timer;
+
+	public GameObject blackHole;
 
 	void Awake()
 	{
 		gameObject.SetActive(false);
+		blackHole.SetActive(false);
 	}
 
 
@@ -49,7 +53,7 @@ public class AlienPop : MonoBehaviour
 		shieldHealth = ((level + 1) * 7 + 5 ) * 13;
 		maxHealth = ((level + 1) * 7 + 5 ) * 20;
 		health = maxHealth;
-		immune = (level-1)*7 + 5;
+//		immune = (level-1)*7 + 5;
 
 		reward = level * 11 + 3;
 
@@ -139,19 +143,33 @@ public class AlienPop : MonoBehaviour
 				if (health <= 0)
 				{
 					// explosion and give reward
-					SpawnManager.Instance.PopFireWork();
+
 					SpawnManager.Instance.PopCoins(reward,transform.position);
 
+					LanguageManager thisLanguageManager = LanguageManager.Instance;
 //					if (level >= UpgradeManager.unlockShot)
 //					{
 //						SpawnManager.Instance.PopTech(transform.position);
 //					}
+					SpawnManager.Instance.PopFireWork();
 
 					textSpawner = PoolManager.Pools["EffectPool"].Spawn("ScoreText");
 					textSpawner.GetComponent<ScoreText>().SetScore(string.Concat("+",reward,"0"));
 
+					NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("BlackHole"),5);
+
 					healthBarObject.SetActive(false);
 					gameObject.SetActive(false);
+
+					GameController.colonyProgress += 1;
+					if (GameController.colonyProgress >= 100)
+					{
+						Vector3 coinPos = new Vector3 (0.0f, 0.0f, 12.0f);
+						SpawnManager.Instance.PopCoins(1000,coinPos);
+						GameController.colonyProgress = 0;
+						NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("UI.ColonyComplete"),5);
+					}
+					blackHole.SetActive(true);
 				}
 				else
 				{

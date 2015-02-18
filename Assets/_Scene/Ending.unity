@@ -5013,7 +5013,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 1, y: .5}
   m_AnchoredPosition: {x: 0, y: 450}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1199874665
 MonoBehaviour:
@@ -5041,6 +5041,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'CONGRATULATION ON YOUR JOURNEY
+
+    Your colony is named as ''Thanks Mom''
+
+    Time to call your mom.
 
 '
 --- !u!222 &1199874666

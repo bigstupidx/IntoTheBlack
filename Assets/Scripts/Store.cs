@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using Prime31;
-
+using SmartLocalization;
 
 public class Store : MonoBehaviour 
 {
@@ -11,6 +11,32 @@ public class Store : MonoBehaviour
 	private bool isConnect;
 
 	public GameObject resultWindow;
+
+	public Text welcome;
+	public Text product1;
+	public Text product1desc;
+	public Text product2;
+	public Text product2desc;
+	public Text product3;
+	public Text product4;
+	public Text product5;
+	public Text product6;
+	public Text storeThanks;
+
+	void Start()
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		welcome.text = thisLanguageManager.GetTextValue("UI.StoreTitle");
+		product1.text = thisLanguageManager.GetTextValue("UI.Product1");
+		product1desc.text = thisLanguageManager.GetTextValue("UI.Product1Desc");
+		product2.text = thisLanguageManager.GetTextValue("UI.Product2");
+		product2desc.text = thisLanguageManager.GetTextValue("UI.Product2Desc");
+		product3.text = thisLanguageManager.GetTextValue("UI.Product3");
+		product4.text = thisLanguageManager.GetTextValue("UI.Product4");
+		product5.text = thisLanguageManager.GetTextValue("UI.Product5");
+		product6.text = thisLanguageManager.GetTextValue("UI.Product6");
+		storeThanks.text = thisLanguageManager.GetTextValue("UI.StoreThanks");
+	}
 
 	void OnEnable()
 	{
@@ -110,7 +136,10 @@ public class Store : MonoBehaviour
 	
 	// 구입 성공 완료
 	void purchaseSucceededEvent(GooglePurchase purchase)
-	{
+	{		
+
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+
 		Debug.Log("purchaseSucceededEvent: " + purchase);
 		// 구입이 성공하면 불리는 함수.
 		// 구입한 항목이 관리되지 않는 제품(캐시보석 같은) 놈이면, 요기서 소모를 시켜줌. 결재 성공했으니까.
@@ -120,7 +149,7 @@ public class Store : MonoBehaviour
 			GameController.isVip = 1;
 			PlayerPrefs.SetInt ("isVip",GameController.isVip);
 
-			resultWindow.GetComponent<StoreResult>().result = "축하 합니다. VIP 가 되셨습니다.\n 획득 골드가 2 배 증가합니다 \n 앞으로 광고가 보여지지 않습니다.";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Product1Result");
 			resultWindow.SetActive(true);
 		}
 		else if (purchase.productId == "intotheblack.venus")
@@ -132,7 +161,7 @@ public class Store : MonoBehaviour
 			PlayerPrefs.SetInt("venus", GameController.wingVenus);
 			PlayerController.Instance.UpdateWing();
 
-			resultWindow.GetComponent<StoreResult>().result = "수성과 금성 행성을 획득하였습니다. \n 앞으로 어떤 외계인이 나타나도 두렵지 않습니다. ";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Product2Result");
 			resultWindow.SetActive(true);
 
 			//script.UpdateWing();
@@ -169,31 +198,31 @@ public class Store : MonoBehaviour
 		// 구입도 됐고 소비까지 성공했으니 요기에서 실제 게임내에 보석을 주는 등의 처리를 하면 되영.
 		// 자세히 영수증 체크를 하고 싶으면 저 구글퍼체이스 들어가셔서 안에 항목들 보시면 될듯.
 		// 근데 클라는 아무 의미 없어요. 클라서 뭘 체크 해봐야 소용이 없...
-		
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 		
 		if (purchase.productId == "one.coin")
 		{
 			GameController.dustPoints += 10000;
-			resultWindow.GetComponent<StoreResult>().result = "우주 골드를 사는 당신은 물질 따위에 연연하지 않는 진정한 스페이스 카우보이!!";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result1");
 			resultWindow.SetActive(true);
 		}
 		else if (purchase.productId == "three.coin")
 		{
-			resultWindow.GetComponent<StoreResult>().result = "노동자들을 착취하여 생산되는 일부 커피들과 다르게 이 골드는 100% 개발자의 노력으로 만들어 졌습니다.";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result2");
 			resultWindow.SetActive(true);
 			// 보석 80개 주기 처리
 			GameController.dustPoints += 50000;
 		}
 		else if (purchase.productId == "five.coin")
 		{
-			resultWindow.GetComponent<StoreResult>().result = "이 기회에 담배도 끊고, 세금도 끊고? 응? 건강도 챙겨보세요.";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result3");
 			resultWindow.SetActive(true);
 			// 보석 180개 주기 처리
 			GameController.dustPoints += 100000;
 		}
 		else if (purchase.productId == "nine.coin")
 		{
-			resultWindow.GetComponent<StoreResult>().result = "좋아하는 일 하면서 살 수 있게 도와주셔서 감사합니다. 다음에는 더 잘 만들께요 ^^";
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result4");
 			resultWindow.SetActive(true);
 			// "에러 관련 메시지 처리 "
 			GameController.dustPoints += 250000;

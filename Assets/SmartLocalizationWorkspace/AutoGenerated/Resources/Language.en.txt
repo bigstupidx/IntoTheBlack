@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BlackHole" xml:space="preserve">
+		<value>Clicking on the black hole will teleport away
+as much as 10 times the speed of the engine.</value>
+	</data>
+	<data name="Menu.Album" xml:space="preserve">
+		<value>Constellation</value>
+	</data>
+	<data name="Menu.Message" xml:space="preserve">
+		<value>Space Chat</value>
+	</data>
+	<data name="Menu.Setting" xml:space="preserve">
+		<value>Setting</value>
+	</data>
+	<data name="Menu.Sns" xml:space="preserve">
+		<value>SNS</value>
+	</data>
+	<data name="Menu.Store" xml:space="preserve">
+		<value>Space Market</value>
+	</data>
+	<data name="Menu.Upgrade" xml:space="preserve">
+		<value>Upgrade</value>
+	</data>
+	<data name="Store.Product1Result" xml:space="preserve">
+		<value>You are VIP now. you will get 2 times golds from now</value>
+	</data>
+	<data name="Store.Product2Result" xml:space="preserve">
+		<value>You got a Mecury and Venus. you are a rock!!!</value>
+	</data>
+	<data name="Store.Result1" xml:space="preserve">
+		<value>You are a space cowboy.</value>
+	</data>
+	<data name="Store.Result2" xml:space="preserve">
+		<value>It's 100 pecent pure golds from develroper.</value>
+	</data>
+	<data name="Store.Result3" xml:space="preserve">
+		<value>Have a good journey with luxury space ship</value>
+	</data>
+	<data name="Store.Result4" xml:space="preserve">
+		<value>I really really appreciate your purchase. 
+I am going to make better game at next time.</value>
+	</data>
+	<data name="UI.Accel" xml:space="preserve">
+		<value>times Accel</value>
+	</data>
+	<data name="UI.AlbumDesc" xml:space="preserve">
+		<value>The engine upgrades limit will increase by one each time 10 to collect.</value>
+	</data>
+	<data name="UI.AlbumTitle" xml:space="preserve">
+		<value>Constellation album</value>
+	</data>
+	<data name="UI.AutoPlay" xml:space="preserve">
+		<value>AutoPlay</value>
+	</data>
+	<data name="UI.BGM" xml:space="preserve">
+		<value>BGM</value>
+	</data>
+	<data name="UI.Close" xml:space="preserve">
+		<value>Close</value>
+	</data>
+	<data name="UI.ColonyComplete" xml:space="preserve">
+		<value>The new colony is completed, such as the Earth.</value>
+	</data>
+	<data name="UI.ColonyProgress" xml:space="preserve">
+		<value>Colony Progress</value>
+	</data>
+	<data name="UI.Credit" xml:space="preserve">
+		<value>Credits</value>
+	</data>
+	<data name="UI.EffectSound" xml:space="preserve">
+		<value>Effect Sound</value>
+	</data>
+	<data name="UI.Engine" xml:space="preserve">
+		<value>Engine</value>
+	</data>
+	<data name="UI.EngineCondition" xml:space="preserve">
+		<value>you have to collect all of this level constellationlue</value>
+	</data>
+	<data name="UI.EngineUpgrade" xml:space="preserve">
+		<value>Upgrade the engine .
+Space ship speed increases.</value>
+	</data>
+	<data name="UI.GoogleAchievement" xml:space="preserve">
+		<value>Google Achievement</value>
+	</data>
+	<data name="UI.GoogleLeader" xml:space="preserve">
+		<value>Google Leaderboard</value>
+	</data>
+	<data name="UI.Hero" xml:space="preserve">
+		<value>Hero</value>
+	</data>
+	<data name="UI.JourneyDistance" xml:space="preserve">
+		<value>Journey Distance</value>
+	</data>
+	<data name="UI.JourneyTime" xml:space="preserve">
+		<value>Journey Time</value>
+	</data>
+	<data name="UI.Keepgoing" xml:space="preserve">
+		<value>your space ship will keep going to journey while you are not in game</value>
+	</data>
+	<data name="UI.Legend" xml:space="preserve">
+		<value>Legend</value>
+	</data>
+	<data name="UI.Locked" xml:space="preserve">
+		<value>Locked</value>
+	</data>
+	<data name="UI.NextDestination" xml:space="preserve">
+		<value>Next Goal</value>
+	</data>
+	<data name="UI.No" xml:space="preserve">
+		<value>No</value>
+	</data>
+	<data name="UI.Normal" xml:space="preserve">
+		<value>Common</value>
+	</data>
+	<data name="UI.PresstoStart" xml:space="preserve">
+		<value>Press to start</value>
+	</data>
+	<data name="UI.Product1" xml:space="preserve">
+		<value>Special VIP Ticket  - 1 $</value>
+	</data>
+	<data name="UI.Product1Desc" xml:space="preserve">
+		<value>Remove AD and Get golds 2 times.</value>
+	</data>
+	<data name="UI.Product2" xml:space="preserve">
+		<value>Venus, Mecury Package - 3 $</value>
+	</data>
+	<data name="UI.Product2Desc" xml:space="preserve">
+		<value>You can get Venus and Mecury wingman to protect your space ship</value>
+	</data>
+	<data name="UI.Product3" xml:space="preserve">
+		<value>10,000 golds - 1 $</value>
+	</data>
+	<data name="UI.Product4" xml:space="preserve">
+		<value>50,000 golds - 3 $</value>
+	</data>
+	<data name="UI.Product5" xml:space="preserve">
+		<value>100,000 golds - 5 $</value>
+	</data>
+	<data name="UI.Product6" xml:space="preserve">
+		<value>250,000 golds - 9 $</value>
+	</data>
+	<data name="UI.QuitGame" xml:space="preserve">
+		<value>Are you sure want to quit game?</value>
+	</data>
+	<data name="UI.Restart" xml:space="preserve">
+		<value>Restart from start</value>
+	</data>
+	<data name="UI.Reward" xml:space="preserve">
+		<value>Reward</value>
+	</data>
+	<data name="UI.SettingTitle" xml:space="preserve">
+		<value>Setting</value>
+	</data>
+	<data name="UI.ShipSpeed" xml:space="preserve">
+		<value>Spaceship Speed</value>
+	</data>
+	<data name="UI.ShotUpgrade" xml:space="preserve">
+		<value>Upgrade your weapons.
+Weapon's damage will be increased.</value>
+	</data>
+	<data name="UI.SNSFacebook" xml:space="preserve">
+		<value>Share your journey with Facebook friends
+free 10,000 golds at first time</value>
+	</data>
+	<data name="UI.SNSTitle" xml:space="preserve">
+		<value>SNS</value>
+	</data>
+	<data name="UI.StoreThanks" xml:space="preserve">
+		<value>Transaction is succeeded.
+Thanks for your purchase.</value>
+	</data>
+	<data name="UI.StoreTitle" xml:space="preserve">
+		<value>Welcome to space shop
+It is best price store in space.</value>
+	</data>
+	<data name="UI.Time" xml:space="preserve">
+		<value>Time</value>
+	</data>
+	<data name="UI.TimeCondition" xml:space="preserve">
+		<value>You have to arrive to the moon</value>
+	</data>
+	<data name="UI.TimeUpgrade" xml:space="preserve">
+		<value>Upgrade your time accel
+Every calculation will be faster than normal time</value>
+	</data>
+	<data name="UI.UpgradeTitle" xml:space="preserve">
+		<value>Space ship Upgrade</value>
+	</data>
+	<data name="UI.Weapon" xml:space="preserve">
+		<value>Weapon</value>
+	</data>
+	<data name="UI.Yes" xml:space="preserve">
+		<value>Yes</value>
+	</data>
+</root>

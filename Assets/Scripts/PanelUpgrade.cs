@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using SmartLocalization;
 
 public class PanelUpgrade : MonoBehaviour 
 {
@@ -12,7 +13,17 @@ public class PanelUpgrade : MonoBehaviour
 	private int lastEngineLevel = -1;
 	private int lastTimeLevel = -1;
 
+	public Text title;
+
+
 	// Use this for initialization
+
+	void Start()
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		title.text = thisLanguageManager.GetTextValue("UI.UpgradeTitle");
+	}
+
 	void OnEnable () 
 	{
 		UpdateButton();
@@ -35,6 +46,7 @@ public class PanelUpgrade : MonoBehaviour
 		UpgradeButton shotUpgradeButton = shotUpgrade.GetComponent<UpgradeButton>();
 		UpgradeButton engineUpgradeButton = engineUpgrade.GetComponent<UpgradeButton>();
 		UpgradeButton timeUpgradeButton = timeUpgrade.GetComponent<UpgradeButton>();
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
 		Upgrade upgrade;
 
@@ -62,7 +74,7 @@ public class PanelUpgrade : MonoBehaviour
 		{
 			shotUpgradeButton.levelText.text = GameController.shotLevel.ToString();
 
-			shotUpgradeButton.lableText.text = "무기 대미지가 증가 합니다. (별자리를 모아야 합니다.)";
+			shotUpgradeButton.lableText.text = thisLanguageManager.GetTextValue("UI.ShotUpgrade");
 
 			string legendCost="";
 			string heroCost="";
@@ -72,11 +84,11 @@ public class PanelUpgrade : MonoBehaviour
 			{
 				if(GameController.legendStars >= upgrade.legend)
 				{
-					legendCost = string.Format("<color=orange>전설</color>: <color=cyan>{0}</color>",upgrade.legend);
+					legendCost = string.Format("<color=orange>{0}</color>: <color=cyan>{1}</color>" ,thisLanguageManager.GetTextValue("UI.Legend") ,upgrade.legend);
 				}
 				else
 				{
-					legendCost = string.Format("<color=orange>전설</color>: <color=red>{0}</color>", upgrade.legend);
+					legendCost = string.Format("<color=orange>{0}</color>: <color=red>{1}</color>" ,thisLanguageManager.GetTextValue("UI.Legend") ,upgrade.legend);
 				}
 			}
 			
@@ -84,11 +96,11 @@ public class PanelUpgrade : MonoBehaviour
 			{
 				if(GameController.heroStars >= upgrade.hero)
 				{
-					heroCost = string.Format("<color=#FF1E64>영웅</color>: <color=cyan>{0}</color>",upgrade.hero);
+					heroCost = string.Format("<color=#FF1E64>{0}</color>: <color=cyan>{1}</color>",thisLanguageManager.GetTextValue("UI.Hero") ,upgrade.hero);
 				}
 				else
 				{
-					heroCost = string.Format("<color=#FF1E64>영웅</color>: <color=red>{0}</color>", upgrade.hero);
+					heroCost = string.Format("<color=#FF1E64>{0}</color>: <color=red>{1}</color>" ,thisLanguageManager.GetTextValue("UI.Hero") ,upgrade.hero);
 				}
 			}
 			
@@ -96,11 +108,11 @@ public class PanelUpgrade : MonoBehaviour
 			{
 				if(GameController.starPoints >= upgrade.common)
 				{
-					commonCost = string.Format("<color=yellow>일반</color>: <color=cyan>{0}</color>",upgrade.common);
+					commonCost = string.Format("<color=yellow>{0}</color>: <color=cyan>{1}</color>",thisLanguageManager.GetTextValue("UI.Normal") ,upgrade.common);
 				}
 				else
 				{
-					commonCost = string.Format("<color=yellow>일반</color>: <color=red>{0}</color>", upgrade.common);
+					commonCost = string.Format("<color=yellow>{0}</color>: <color=red>{1}</color>",thisLanguageManager.GetTextValue("UI.Normal") ,upgrade.common);
 				}
 			}
 			shotUpgradeButton.costText.text = string.Format("{0} {1} {2}", legendCost, heroCost, commonCost);
@@ -117,16 +129,16 @@ public class PanelUpgrade : MonoBehaviour
 			engineUpgradeButton.levelText.text = GameController.engineLevel.ToString();
 			engineUpgradeButton.costText.color = Color.yellow;
 
-			engineUpgradeButton.lableText.text = "행성의 인력을 이용해 탐사선의 속도를 향상 시킵니다.\n [잠겨있음]";
+			engineUpgradeButton.lableText.text = thisLanguageManager.GetTextValue("UI.EngineUpgrade");
 
-			engineUpgradeButton.costText.text = string.Concat(StarLoader.unlockLevel + " 레벨 별자리 모두 수집");
+			engineUpgradeButton.costText.text = string.Concat( thisLanguageManager.GetTextValue("UI.EngineCondition") + StarLoader.unlockLevel);
 
 			engineUpgradeButton.button.enabled = false;
 			engineUpgradeButton.icon.overrideSprite = unlockSprite;
 		}
 		else if (GameController.engineLevel == GameController.maxEngineLevel)
 		{
-			engineUpgradeButton.lableText.text = "속도가 모두 업그레이드 되었습니다.";
+			engineUpgradeButton.lableText.text = "MAX.";
 			engineUpgradeButton.levelText.text = GameController.engineLevel.ToString();
 
 			engineUpgradeButton.costText.text = "MAX";
@@ -136,7 +148,7 @@ public class PanelUpgrade : MonoBehaviour
 		else
 		{
 			engineUpgradeButton.levelText.text = GameController.engineLevel.ToString();
-			engineUpgradeButton.lableText.text = "탐사선의 속도가 빨라 집니다.";
+			engineUpgradeButton.lableText.text = thisLanguageManager.GetTextValue("UI.EngineUpgrade");
 
 			if (GameController.dustPoints >= upgrade.dust)
 			{
@@ -154,10 +166,10 @@ public class PanelUpgrade : MonoBehaviour
 		upgrade = UpgradeManager.Instance.UpgradeCheck("time");
 		if (!upgrade.isUnlock)
 		{
-			timeUpgradeButton.lableText.text = "시간 가속을 개발하지 못했습니다.[잠겨있음]";
+			timeUpgradeButton.lableText.text = thisLanguageManager.GetTextValue("UI.TimeUpgrade");
 			timeUpgradeButton.levelText.text = GameController.timeLevel.ToString();
 
-			timeUpgradeButton.costText.text = "달에 도착해야 합니다.";
+			timeUpgradeButton.costText.text = thisLanguageManager.GetTextValue("UI.TimeCondition");
 			//timeUpgradeButton.costText.text = string.Concat(StarLoader.unlockLevel + " 레벨 별자리 모두 수집");
 			timeUpgradeButton.button.enabled = false;
 			timeUpgradeButton.icon.overrideSprite = unlockSprite;
@@ -165,7 +177,7 @@ public class PanelUpgrade : MonoBehaviour
 		else if (GameController.timeLevel == GameController.maxTimeLevel)
 		{
 			timeUpgradeButton.levelText.text = GameController.timeLevel.ToString();
-			timeUpgradeButton.lableText.text = "시간가속이 모두 업그레이드 되었습니다.";
+			timeUpgradeButton.lableText.text = "MAX";
 			timeUpgradeButton.costText.text = "MAX";
 			timeUpgradeButton.button.enabled = false;
 			timeUpgradeButton.icon.overrideSprite = null;
@@ -174,7 +186,7 @@ public class PanelUpgrade : MonoBehaviour
 		{
 
 			timeUpgradeButton.levelText.text = GameController.timeLevel.ToString();
-			timeUpgradeButton.lableText.text = "시간을 빠르게 가속 합니다.\n 실제 시간 보다 빠르게 진행 됩니다.";
+			timeUpgradeButton.lableText.text = thisLanguageManager.GetTextValue("UI.TimeUpgrade");
 
 			if (GameController.dustPoints >= upgrade.dust)
 			{

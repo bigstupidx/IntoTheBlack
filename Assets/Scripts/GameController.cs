@@ -107,6 +107,9 @@ public class GameController : MonoBehaviour
 
 	public static float scrollModifier;
 	public static bool isGoogle;
+	public static int uploadFacebook;
+
+	public static int colonyProgress;
 
 	private float fireModifier = 1;
 
@@ -170,6 +173,9 @@ public class GameController : MonoBehaviour
 		starPoints = PlayerPrefs.GetInt("starPoints");
 		legendStars = PlayerPrefs.GetInt("legendStars");
 		heroStars = PlayerPrefs.GetInt("heroStars");
+		uploadFacebook = PlayerPrefs.GetInt ("uploadFacebook");
+
+		colonyProgress = PlayerPrefs.GetInt("colonyProgress");
 
 		journeyTime = PlayerPrefs.GetFloat("journeyTime");
 		if (journeyTime < 0 ) {journeyTime = 0; }
@@ -367,13 +373,13 @@ public class GameController : MonoBehaviour
 		journeyTime += timeLevel * Time.deltaTime;
 		distanceFromEarth += engineSpeed * 0.000277777F * timeLevel * Time.deltaTime; // km/h -> km/sec 
 
-		if ( Application.platform == RuntimePlatform.Android )
-		{
-			if( Input.GetKeyDown( KeyCode.Escape ))
-			{ 
-				Application.Quit ();
-			}
-		}
+//		if ( Application.platform == RuntimePlatform.Android )
+//		{
+//			if( Input.GetKeyDown( KeyCode.Escape ))
+//			{ 
+//				Application.Quit ();
+//			}
+//		}
 
 
 		if (ingSwing)
@@ -474,6 +480,8 @@ public class GameController : MonoBehaviour
 		PlayerPrefs.SetInt("unlockShot",UpgradeManager.unlockShot);
 		PlayerPrefs.SetInt("unlockEngine",UpgradeManager.unlockEngine);
 		PlayerPrefs.SetInt("unlockTime",UpgradeManager.unlockTime);
+		PlayerPrefs.SetInt("uploadFacebook",uploadFacebook);
+		PlayerPrefs.SetInt("colonyProgress",colonyProgress);
 
 		PlayerPrefs.SetString("lastPlayTime", System.DateTime.Now.ToBinary().ToString());
 

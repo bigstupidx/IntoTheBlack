@@ -285,7 +285,7 @@ public class SmartChat : MonoBehaviour
 	
 	void OnDisable()
 	{
-		smartFox.Send(new LogoutRequest());
+		//smartFox.Send(new LogoutRequest());
 	}
 	
 	void OnEnable()

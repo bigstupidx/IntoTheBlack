@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
+using SmartLocalization;
 
 // manage to game goals and event like character's conversation.
 // study how to use singletone method, google docs, (doscpin), sturucture (data array) and action and task;
@@ -47,6 +48,8 @@ public class EventManager : MonoBehaviour
 	public int eventCount = 0;
 	public GameObject autoFightButton;
 
+	private string rewardString;
+
 	public static EventManager Instance()
 	{
 		if (_instance = null)
@@ -61,6 +64,7 @@ public class EventManager : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
+
 		previousGoal = PlayerPrefs.GetInt("previousGoal");
 		if (previousGoal == 0)
 			previousGoal = -1;
@@ -76,6 +80,9 @@ public class EventManager : MonoBehaviour
 		if (previousGoal < 3)
 			autoFightButton.SetActive(false);
 
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		rewardString = thisLanguageManager.GetTextValue("UI.Reward");
+
 		StartCoroutine (EventLoop());
 		 		
 	}
@@ -87,8 +94,11 @@ public class EventManager : MonoBehaviour
 
 		while(true)
 		{
+			if(DialogManager.isDialogPop == false)
+			{
+				CheckEvent();
+			}
 
-			CheckEvent();
 			yield return new WaitForSeconds(eventWaitTime);
 
 		}
@@ -117,6 +127,12 @@ public class EventManager : MonoBehaviour
 				break;
 			}
 		}
+	}
+
+	public void ColonyEvent()
+	{
+
+
 	}
 
 		
@@ -174,7 +190,7 @@ public class EventManager : MonoBehaviour
 
 		window.goalTitle.text = _title;
 		window.goalDistance.text = string.Concat(_distance.ToString("N0"), " Km");
-		window.reward.text = string.Format("{0} {1}", "보상: ", _rewardCoin.ToString("N0"));
+		window.reward.text = string.Format("{0}: {1}", rewardString, _rewardCoin.ToString("N0"));
 		window.rewardText.text = _rewardDesc;
 
 	
@@ -216,7 +232,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("earth", 1);
 
 			SoundManager.Instance.PlaySound(9);
-			NoticeManager.Instance.SetNotice("지구를 획득했습니다. 새로운 기술 사용이 가능합니다.\n 지구 버튼을 클릭하면 주변의 암석에서 돈을 모을 수 있습니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got Earth. New skill is unlocked.\n Touch Earth skill then you can get golds near space ship",5f);
 
 			Instantiate(planets[0]);
 
@@ -242,7 +258,7 @@ public class EventManager : MonoBehaviour
 //			UpgradeManager.unlockEngine = 20;
 //			PlayerPrefs.SetInt("unlockEngine",UpgradeManager.unlockEngine);	
 //			
-			NoticeManager.Instance.SetNotice("우주 정거장을 발견했습니다. 마구 클릭해서 돈을 모아 보세요.",5f);
+			NoticeManager.Instance.SetNotice("You discovered ISS, Keep touching it to get golds",5f);
 			break;
 
 			// Huble
@@ -264,7 +280,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("unlockTime",UpgradeManager.unlockTime);	
 
 			GameController.timeLevel = 5;
-			NoticeManager.Instance.SetNotice("허블 망원경을 발견했습니다. 지금부터 5 배 빠르게 진행 합니다.",5f);
+			NoticeManager.Instance.SetNotice("you discoverd hubble telescope, start to accel 5 times ",5f);
 			GameController.Instance.SavePlayerData();
 			SpawnManager.Instance.CaculateSpawnProb();
 			break;
@@ -287,7 +303,7 @@ public class EventManager : MonoBehaviour
 			PlayerController.Instance.UpdateWing();
 
 			GameController.timeLevel +=5;
-			NoticeManager.Instance.SetNotice("달을 획득했습니다. 지금부터 10 배 더 빠르게 진행 합니다. \n 시간 가속을 업그레이드 할 수 있습니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got the Moon. 10 times faster than normal time speed \n You can upgrade time accelation from now. ",5f);
 			UpgradeManager.unlockTime = 301;
 			PlayerPrefs.SetInt("unlockTime",UpgradeManager.unlockTime);
 
@@ -321,7 +337,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("Mars", 1);
 			PlayerController.Instance.UpdateWing();
 
-			NoticeManager.Instance.SetNotice("화성을 획득했습니다. 새로운 기술 사용이 가능합니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got Mars. New skill is unlocked",5f);
 //			UpgradeManager.unlockEngine = 101;
 //			PlayerPrefs.SetInt("unlockEngine",UpgradeManager.unlockEngine);
 			Instantiate(planets[6]);
@@ -357,6 +373,7 @@ public class EventManager : MonoBehaviour
 			SoundManager.Instance.PlaySound(9);
 			GameController.wingJupiter = 1;
 			PlayerPrefs.SetInt("jupiter", 1);
+			NoticeManager.Instance.SetNotice("You have got Jupiter",5f);
 			PlayerController.Instance.UpdateWing();
 			Instantiate(planets[11]);
 
@@ -399,7 +416,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("saturn", 1);
 			PlayerController.Instance.UpdateWing();
 
-			NoticeManager.Instance.SetNotice("토성을 획득했습니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got Saturn",5f);
 			Instantiate(planets[19]);
 
 			break;
@@ -439,7 +456,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("uranus", 1);
 			PlayerController.Instance.UpdateWing();
 			
-			NoticeManager.Instance.SetNotice("천왕성을 획득했습니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got Uranus",5f);
 			Instantiate(planets[26]);
 
 			break;
@@ -465,7 +482,7 @@ public class EventManager : MonoBehaviour
 			GameController.wingNeptune = 1;
 			PlayerPrefs.SetInt("neptune", 1);
 			PlayerController.Instance.UpdateWing();
-			NoticeManager.Instance.SetNotice("해왕성을 획득했습니다.",5f);
+			NoticeManager.Instance.SetNotice("You have got Neptune",5f);
 			Instantiate(planets[29]);
 
 			break;

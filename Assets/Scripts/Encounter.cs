@@ -101,9 +101,9 @@ public class Encounter : MonoBehaviour
 		spawnTimer -= Time.deltaTime;
 		if (spawnTimer < 0)
 		{
-//			SpawnWhale();
-//			SpawnAlien();
-			SpawnStar();
+			SpawnWhale();
+			SpawnAlien();
+//			SpawnStar();
 			spawnTimer = 10f;
 		}
 #endif

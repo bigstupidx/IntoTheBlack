@@ -6,6 +6,7 @@ using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
 using System.Linq;
 using UnityEngine.UI;
+using SmartLocalization;
 
 public class SNSManager : MonoBehaviour
 {
@@ -62,7 +63,7 @@ public class SNSManager : MonoBehaviour
 		}
 		else
 		{
-			NoticeManager.Instance.SetNotice("페이스북에 사진을 공유하기 위해서는 인터넷 연결이 필요합니다.", 3);
+			NoticeManager.Instance.SetNotice("you cannot connect internet", 3);
 			status = "you cannot connect internet";
 		}
 	}
@@ -74,20 +75,20 @@ public class SNSManager : MonoBehaviour
 
 	void OnEnable()
 	{
-
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
 		Social.localUser.Authenticate((bool success) =>	
 		                              {
 			if(success)
 			{
-				leaderBoardButtonDesc.text = "구글 플레이에서 순위를 확인하세요.";
-				achievmentButtonDesc.text = "구글 플레이에서 업적을 확인하세요.";
+				leaderBoardButtonDesc.text = thisLanguageManager.GetTextValue("UI.GoogleLeader");
+				achievmentButtonDesc.text = thisLanguageManager.GetTextValue("UI.GoogleAchievement");
 
 			}
 			else
 			{
-				leaderBoardButtonDesc.text = "구글 플레이에서 순위를 확인하세요. \n 구글 플레이에 로그인되어 있지 않습니다.";
-				achievmentButtonDesc.text = "구글 플레이에서 업적을 확인하세요. \n 구글 플레이에 로그인되어 있지 않습니다."; 
+				leaderBoardButtonDesc.text = "You are not loggined GooglePlay";
+				achievmentButtonDesc.text = "You are not loggined GooglePlay"; 
 			}
 		});
 
@@ -135,14 +136,15 @@ public class SNSManager : MonoBehaviour
 	private void OnInitComplete()
 	{
 		Debug.Log("FB.Init completed: Is user logged in? " + FB.IsLoggedIn);
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
 		if (FB.IsLoggedIn)
 		{
-			facebookButtonDesc.text = "우주 여행의 경험을 친구들과 공유하세요.";
+			facebookButtonDesc.text = thisLanguageManager.GetTextValue("UI.SNSFacebook");
 		}
 		else
 		{
-			facebookButtonDesc.text = "우주 여행의 경험을 친구들과 공유하세요. \n (페이스북 계정이 필요합니다.)";
+			facebookButtonDesc.text = thisLanguageManager.GetTextValue("UI.SNSFacebook");
 		}
 	}
 	
@@ -233,7 +235,19 @@ public class SNSManager : MonoBehaviour
 		{
 			lastResponse = "Success Response:\n" + result.Text;
 			Debug.Log (lastResponse);
-			NoticeManager.Instance.SetNotice("당신의 멋진 여행을 페이스북에 공유했습니다.", 5);
+
+			if (GameController.uploadFacebook !=100)
+			{
+				GameController.dustPoints += 10000;
+				GameController.uploadFacebook = 100;
+				PlayerPrefs.SetInt("uploadFacebook",100);
+				NoticeManager.Instance.SetNotice("Upload succeess and You have gained 10,000 golds", 5);
+			}
+			else
+			{
+				NoticeManager.Instance.SetNotice("Upload succeess", 5);
+			}
+
 		}
 		else if (result.Texture != null)
 		{
@@ -279,9 +293,9 @@ public class SNSManager : MonoBehaviour
 
 	public void UploadScreenShot()
 	{	
-		 string _description = string.Concat (screenshotDesc.text, "\n" , distanceText.text);
+		//string _description = string.Concat (screenshotDesc.text, "\n" , distanceText.text);
 
-		//string _description = screenshotDesc.text;
+		string _description = screenshotDesc.text;
 
 		if (FB.IsInitialized)
 		{
@@ -319,7 +333,7 @@ public class SNSManager : MonoBehaviour
 					else
 					{
 						SoundManager.Instance.PlaySound(10);
-						achievmentButtonDesc.text = "구글 플레이에서 업적을 확인하세요. \n 구글 플레이에 로그인 할 수 없습니다.."; 
+						achievmentButtonDesc.text = "You are not loggined GooglePlay"; 
 					}
 				});
 
@@ -338,7 +352,7 @@ public class SNSManager : MonoBehaviour
 				else
 				{
 					SoundManager.Instance.PlaySound(10);
-					leaderBoardButtonDesc.text = "구글 플레이에서 순위를 확인하세요. \n 구글 플레이에 로그인 할 수 없습니다.";
+					leaderBoardButtonDesc.text = "you are not loggined GooglePlay";
 				}
 			});
 	}

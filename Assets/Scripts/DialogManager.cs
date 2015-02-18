@@ -4,6 +4,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 using System.IO;
+using SmartLocalization;
 
 public struct DialogData 
 {
@@ -87,9 +88,12 @@ public class DialogManager : MonoBehaviour
 
 	public static DialogData[] m_Dialogs;
 	public static GoalData[] m_Goals;
+	public static DialogData[] colonyDialogs;
 
 	public Sprite[] pilotSprite;
 	public GameObject dialogWindow;
+
+	public static bool isDialogPop;
 	
 	TextAsset dialogAsset;
 	TextAsset goalAsset;
@@ -97,6 +101,22 @@ public class DialogManager : MonoBehaviour
 
 	void Awake()
 	{
+		isDialogPop = false;
+
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		SmartCultureInfo cultureInfo = thisLanguageManager.GetSupportedSystemLanguage();
+		
+		if(thisLanguageManager.IsLanguageSupportedEnglishName(cultureInfo.englishName))
+		{
+			thisLanguageManager.ChangeLanguage(cultureInfo.languageCode);
+			//thisLanguageManager.ChangeLanguage("fr");
+		}
+		else
+		{
+			Debug.Log("Language is not supported");
+			thisLanguageManager.ChangeLanguage("en");
+		}
+
 		dialogAsset = Resources.Load("dialogCollection") as TextAsset;
 
 		XmlSerializer serializer = new XmlSerializer(typeof(DialogContainer));
@@ -136,6 +156,23 @@ public class DialogManager : MonoBehaviour
 			m_Goals[i].rewardText = g_container.Goals[i].RewardText;
 		}
 	
+		dialogAsset = null;
+		dialogAsset = Resources.Load("colonyCollection") as TextAsset;
+		container = null;
+
+		container = serializer.Deserialize(xmlReader) as DialogContainer;
+		
+		// suck -- already too many static m_dialogs used in other script 
+		colonyDialogs = new DialogData[container.Dialogs.Length];
+		
+		
+		for (int i = 0; i < container.Dialogs.Length; i++)
+		{
+			colonyDialogs[i].id = container.Dialogs[i].id;
+			colonyDialogs[i].pilot = container.Dialogs[i].pilot;
+			colonyDialogs[i].talk = container.Dialogs[i].Talk;
+		}
+
 		dialogWindow.SetActive(false);
 
 		g_container = null;
@@ -161,6 +198,7 @@ public class DialogManager : MonoBehaviour
 
 	public void CloseDialog()
 	{
+		isDialogPop = false;
 		dialogWindow.SetActive(false);
 	}
 }

@@ -14,12 +14,14 @@ public class EventDialog : MonoBehaviour
 
 	void OnEnable()
 	{
+		DialogManager.isDialogPop = true;
 		StartCoroutine(ClosebyTime());
 	}
 
 	IEnumerator ClosebyTime()
 	{
 		yield return new WaitForSeconds(_closeTime);
+		DialogManager.isDialogPop = false;
 		gameObject.SetActive(false);
 	}
 

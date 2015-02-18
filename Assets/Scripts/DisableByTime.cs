@@ -4,12 +4,7 @@ using System.Collections;
 public class DisableByTime : MonoBehaviour 
 {
 	public float lifeTime;
-	
-	void Awake()
-	{
-		gameObject.SetActive(false);
-	}
-	
+
 	void OnEnable()
 	{
 		StartCoroutine(DespawnTimer());

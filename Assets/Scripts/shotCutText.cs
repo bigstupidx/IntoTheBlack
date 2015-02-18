@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Text;
+using SmartLocalization;
 
 public class shotCutText : MonoBehaviour 
 {
@@ -19,9 +20,32 @@ public class shotCutText : MonoBehaviour
 	private string heroCost="";
 	private string commonCost="";
 
+
+	private string shotString;
+	private string engineString;
+	private string timeString;
+	private string legend;
+	private string hero;
+	private string common;
+	private string locked;
+
 	private StringBuilder sb = new StringBuilder();
 
 	// Update is called once per frame
+
+	void Start()
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+//		SmartCultureInfo cultureInfo = thisLanguageManager.GetSupportedSystemLanguage();
+
+		shotString = thisLanguageManager.GetTextValue("UI.Weapon");
+		engineString = thisLanguageManager.GetTextValue("UI.Engine");
+		timeString = thisLanguageManager.GetTextValue("UI.Time");
+		legend = thisLanguageManager.GetTextValue("UI.Legend");
+		hero = thisLanguageManager.GetTextValue("UI.Hero");
+		common = thisLanguageManager.GetTextValue("UI.Normal");
+		locked = thisLanguageManager.GetTextValue("UI.Locked");
+	}
 
 	void Update()
 	{
@@ -41,11 +65,16 @@ public class shotCutText : MonoBehaviour
 
 		if(!upgrade.isUnlock)
 		{
-			shot.text= "무기: Locked";
+			sb.Length = 0;
+			sb.AppendFormat("{0}: {1}", shotString, locked);
+			shot.text= sb.ToString();
 		}
 		else if(GameController.shotLevel == GameController.maxShotLevel)
 		{
-			shot.text = "무기: MAX";
+			sb.Length = 0;
+			sb.AppendFormat("{0}: MAX", shotString);
+			shot.text= sb.ToString();
+//			shot.text = "무기: MAX";
 		}
 		else
 		{
@@ -54,14 +83,14 @@ public class shotCutText : MonoBehaviour
 				if(GameController.legendStars >= upgrade.legend)
 				{
 					sb.Length = 0;
-					sb.AppendFormat("<color=orange>전설</color>: <color=cyan>{0}</color>",upgrade.legend);
+					sb.AppendFormat("<color=orange>{0}</color>: <color=cyan>{1}</color>", legend, upgrade.legend);
 					legendCost = sb.ToString();
 					// legendCost = string.Format("<color=orange>전설</color>: <color=cyan>{0}</color>",upgrade.legend);
 				}
 				else
 				{
 					sb.Length = 0;
-					sb.AppendFormat("<color=orange>전설</color>: <color=red>{0}</color>", upgrade.legend);
+					sb.AppendFormat("<color=orange>{0}</color>: <color=red>{1}</color>", legend, upgrade.legend);
 					legendCost = sb.ToString();
 
 					//legendCost = string.Format("<color=orange>전설</color>: <color=red>{0}</color>", upgrade.legend);
@@ -70,7 +99,7 @@ public class shotCutText : MonoBehaviour
 				if(GameController.heroStars >= upgrade.hero)
 				{
 					sb.Length=0;
-					sb.AppendFormat("<color=#FF1E64>영웅</color>: <color=cyan>{0}</color>",upgrade.hero);
+					sb.AppendFormat("<color=#FF1E64>{0}</color>: <color=cyan>{1}</color>",hero ,upgrade.hero);
 					heroCost = sb.ToString();
 					
 					//heroCost = string.Format("<color=#FF1E64>영웅</color>: <color=cyan>{0}</color>",upgrade.hero);
@@ -78,7 +107,7 @@ public class shotCutText : MonoBehaviour
 				else
 				{
 					sb.Length=0;
-					sb.AppendFormat("<color=#FF1E64>영웅</color>: <color=red>{0}</color>", upgrade.hero);
+					sb.AppendFormat("<color=#FF1E64>{0}</color>: <color=red>{1}</color>",hero ,upgrade.hero);
 					heroCost = sb.ToString();
 
 					//heroCost = string.Format("<color=#FF1E64>영웅</color>: <color=red>{0}</color>", upgrade.hero);
@@ -87,7 +116,7 @@ public class shotCutText : MonoBehaviour
 				if(GameController.starPoints >= upgrade.common)
 				{
 					sb.Length=0;
-					sb.AppendFormat("<color=yellow>일반</color>: <color=cyan>{0}</color>",upgrade.common);
+					sb.AppendFormat("<color=yellow>{0}</color>: <color=cyan>{1}</color>", common, upgrade.common);
 					commonCost = sb.ToString();
 
 					//commonCost = string.Format("<color=yellow>일반</color>: <color=cyan>{0}</color>",upgrade.common);
@@ -95,7 +124,7 @@ public class shotCutText : MonoBehaviour
 				else
 				{
 					sb.Length=0;
-					sb.AppendFormat("<color=yellow>일반</color>: <color=red>{0}</color>", upgrade.common);
+					sb.AppendFormat("<color=yellow>{0}</color>: <color=red>{1}</color>", common, upgrade.common);
 					commonCost = sb.ToString();
 
 					// commonCost = string.Format("<color=yellow>일반</color>: <color=red>{0}</color>", upgrade.common);
@@ -107,7 +136,7 @@ public class shotCutText : MonoBehaviour
 			}
 
 			sb.Length = 0;
-			sb.AppendFormat("무기\n{0}\n{1}\n{2}", legendCost, heroCost, commonCost);
+			sb.AppendFormat("{0}\n{1}\n{2}\n{3}", shotString, legendCost, heroCost, commonCost);
 
 			if(!string.Equals(sb.ToString(), shot.text))
 			{
@@ -120,18 +149,22 @@ public class shotCutText : MonoBehaviour
 		
 		if(!upgrade.isUnlock)
 		{
-			engine.text = "속도: 잠김";
+			sb.Length = 0;
+			sb.AppendFormat("{0}: {1}", engineString, locked);
+			engine.text = sb.ToString();
 		}
 		else if(GameController.shotLevel == GameController.maxShotLevel)
 		{
-			engine.text = "속도: MAX";
+			sb.Length = 0;
+			sb.AppendFormat("{0}: MAX", engineString);
+			engine.text = sb.ToString();
 		}
 		else
 		{
 			if(upgrade.ispossible)
 			{
 				sb.Length = 0;
-				sb.AppendFormat("속도: <color=cyan>{0}</color>", upgrade.dust);
+				sb.AppendFormat("{0}: <color=cyan>{0}</color>",engineString, upgrade.dust);
 
 				if(!string.Equals(sb.ToString(), engine.text))
 				{
@@ -141,7 +174,7 @@ public class shotCutText : MonoBehaviour
 			else
 			{
 				sb.Length = 0;
-				sb.AppendFormat("속도: <color=red>{0}</color>", upgrade.dust);
+				sb.AppendFormat("{0}: <color=red>{0}</color>",engineString, upgrade.dust);
 
 				if(!string.Equals(sb.ToString(), engine.text))
 				{
@@ -154,18 +187,23 @@ public class shotCutText : MonoBehaviour
 		
 		if(!upgrade.isUnlock)
 		{
-			time.text = "시간: 잠김";
+			sb.Length = 0;
+			sb.AppendFormat("{0}: {1}", timeString, locked);
+			time.text = sb.ToString();
 		}
 		else if(GameController.shotLevel == GameController.maxShotLevel)
-		{
-			time.text = "시간: MAX";
+		{			
+			sb.Length = 0;
+			sb.AppendFormat("{0}: MAX", timeString);
+			time.text = sb.ToString();
+
 		}
 		else
 		{
 			if(upgrade.ispossible)
 			{
 				sb.Length = 0;
-				sb.AppendFormat("시간: <color=cyan>{0}</color>", upgrade.dust);
+				sb.AppendFormat("{0}: <color=cyan>{1}</color>", timeString, upgrade.dust);
 
 				if(!string.Equals(sb.ToString(),time.text))
 				{
@@ -175,7 +213,7 @@ public class shotCutText : MonoBehaviour
 			else
 			{
 				sb.Length = 0;
-				sb.AppendFormat("시간: <color=red>{0}</color>", upgrade.dust);
+				sb.AppendFormat("{0}: <color=red>{1}</color>", timeString, upgrade.dust);
 
 				if(!string.Equals(sb.ToString(),time.text))
 				{
