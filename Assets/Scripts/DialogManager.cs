@@ -94,14 +94,16 @@ public class DialogManager : MonoBehaviour
 	public GameObject dialogWindow;
 
 	public static bool isDialogPop;
-	
-	TextAsset dialogAsset;
-	TextAsset goalAsset;
-
+	public int colonyCount = 0;
 
 	void Awake()
 	{
+		TextAsset dialogAsset;
+		TextAsset goalAsset;
+		TextAsset colonyAsset;
+
 		isDialogPop = false;
+		colonyCount = PlayerPrefs.GetInt("colonyCount");
 
 		LanguageManager thisLanguageManager = LanguageManager.Instance;
 		SmartCultureInfo cultureInfo = thisLanguageManager.GetSupportedSystemLanguage();
@@ -156,22 +158,27 @@ public class DialogManager : MonoBehaviour
 			m_Goals[i].rewardText = g_container.Goals[i].RewardText;
 		}
 	
-		dialogAsset = null;
-		dialogAsset = Resources.Load("colonyCollection") as TextAsset;
-		container = null;
+		colonyAsset = Resources.Load("colonyCollection") as TextAsset;
 
-		container = serializer.Deserialize(xmlReader) as DialogContainer;
+		serializer = new XmlSerializer(typeof(DialogContainer));
+		stringReader = new StringReader(colonyAsset.text);
+		xmlReader = new XmlTextReader(stringReader);
+
+		var c_container = serializer.Deserialize(xmlReader) as DialogContainer;
 		
 		// suck -- already too many static m_dialogs used in other script 
-		colonyDialogs = new DialogData[container.Dialogs.Length];
+		colonyDialogs = new DialogData[c_container.Dialogs.Length];
 		
 		
 		for (int i = 0; i < container.Dialogs.Length; i++)
 		{
-			colonyDialogs[i].id = container.Dialogs[i].id;
-			colonyDialogs[i].pilot = container.Dialogs[i].pilot;
-			colonyDialogs[i].talk = container.Dialogs[i].Talk;
+			colonyDialogs[i].id = c_container.Dialogs[i].id;
+			colonyDialogs[i].pilot = c_container.Dialogs[i].pilot;
+			colonyDialogs[i].talk = c_container.Dialogs[i].Talk;
 		}
+
+		//Debug.Log ("dialog : " + m_Dialogs[1].talk.ToString());
+		//Debug.Log (colonyDialogs[1].talk);
 
 		dialogWindow.SetActive(false);
 
@@ -182,9 +189,20 @@ public class DialogManager : MonoBehaviour
 		goalAsset = null;
 		dialogAsset = null;
 
+
 	}
 
 
+	public void ColonyEvent()
+	{
+		if (colonyCount <= 35)
+		{
+			SetDialog(DialogManager.colonyDialogs[colonyCount].pilot, DialogManager.colonyDialogs[colonyCount].talk);
+			colonyCount += 1;
+			PlayerPrefs.SetInt("colonyCount",colonyCount);
+		}
+	}
+	
 	public void SetDialog(int _pilotNum, string _dialog)
 	{
 		EventDialog window = dialogWindow.GetComponent<EventDialog>();

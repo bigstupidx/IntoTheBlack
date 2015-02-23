@@ -46,6 +46,7 @@ public class EventManager : MonoBehaviour
 	public float eventWaitTime;
 	// event hmm
 	public int eventCount = 0;
+
 	public GameObject autoFightButton;
 
 	private string rewardString;
@@ -73,6 +74,8 @@ public class EventManager : MonoBehaviour
 		GameController.nextGoalDistance = DialogManager.m_Goals[0].distance;
 
 		eventCount = PlayerPrefs.GetInt("eventCount");
+
+
 		Array.Reverse(DialogManager.m_Goals);
 
 		goalWindow.SetActive(false);
@@ -129,11 +132,6 @@ public class EventManager : MonoBehaviour
 		}
 	}
 
-	public void ColonyEvent()
-	{
-
-
-	}
 
 		
 	void Update()

@@ -21653,6 +21653,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 409eb03a1fdab4790872da520de18b87, type: 3}
   - {fileID: 21300000, guid: 2788fa62eacc847f6bc168c5e3af84f3, type: 3}
   dialogWindow: {fileID: 132282552}
+  colonyCount: 0
 --- !u!1 &555447182
 GameObject:
   m_ObjectHideFlags: 0

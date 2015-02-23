@@ -32,8 +32,7 @@ public class ClickTeleport : MonoBehaviour
 					SoundManager.Instance.PlaySound(14);
 					//Handheld.Vibrate();
 					GameController.distanceFromEarth += (GameController.engineSpeed * 10);
-
-
+					DialogManager.Instance.ColonyEvent();
 					animator.SetTrigger("blackhole");
 				}
 			}
