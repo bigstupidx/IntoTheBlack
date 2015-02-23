@@ -1,0 +1,113 @@
+<DialogCollection>
+    <Dialogs>
+        <Dialog id="0" pilot="1">
+        	<Talk>“When someone loves you, the way they talk about you is different. You feel safe and comfortable.” ― Jess C. Scott, The Intern</Talk>
+        </Dialog>
+        <Dialog id="1" pilot="2">
+            <Talk>“I demolish my bridges behind me...then there is no choice but to move forward” ― Fridtjof Nansen</Talk>
+        </Dialog>
+        <Dialog id="2" pilot="1">
+            <Talk>“When you have exhausted all possibilities, remember this - you haven't.” ― Thomas A. Edison</Talk>
+        </Dialog>     
+        <Dialog id="3" pilot="3">
+            <Talk>“But just because you bury something, that doesn’t mean it stops existing.” ― Jenny Han, We'll Always Have Summer</Talk>
+        </Dialog>       
+        <Dialog id="4" pilot="2">
+            <Talk>“You shouldn't throw stones if you live in a glass house and if you got a glass jaw, you should watch yo mouth: cause I'll break yo face.” ― 50 Cent</Talk>
+        </Dialog>       
+        <Dialog id="5" pilot="3">
+            <Talk>“Make your lives a masterpiece, you only get one canvas.” ― E.A. Bucchianeri, Brushstrokes of a Gadfly</Talk>
+        </Dialog>       
+        <Dialog id="6" pilot="1">
+            <Talk>“You've got a lot of choices. If getting out of bed in the morning is a chore and you're not smiling on a regular basis, try another choice.” ― Steven D. Woodhull</Talk>
+        </Dialog>       
+        <Dialog id="7" pilot="2">
+        	<Talk>“And you'd think that killing people would make them like you, but it doesn't. It just- it just makes them dead.” ― Joe Walker</Talk>
+        </Dialog>
+        <Dialog id="8" pilot="3">
+        	<Talk>A loving heart is the truest wisdom. -- Charles Dickens </Talk>
+        </Dialog>
+        <Dialog id="9" pilot="1">
+        	<Talk>Accidents will happen      -- George Colman</Talk>
+        </Dialog>
+        <Dialog id="10" pilot="2">
+        	<Talk>It takes two to tangle.      -- unknown</Talk>
+        </Dialog>
+        <Dialog id="11" pilot="2">
+        	<Talk>Love is often the fruit of marriage. -- French (on marriage) </Talk>
+        </Dialog>
+        <Dialog id="12" pilot="2">
+        	<Talk>Love isn't love until you give it away.      -- John H. MacDonald Jr. </Talk>
+        </Dialog>
+        <Dialog id="13" pilot="3">
+        	<Talk>Not all who make love, make marriages.     -- Russian (on marriage)</Talk>
+        </Dialog>
+        <Dialog id="14" pilot="2">
+            <Talk>One who marries for love alone will have bad days but good nights.     -- Egyptian (on marriage)</Talk>
+        </Dialog>
+        <Dialog id="15" pilot="2">
+            <Talk>"There is only one kind of love, but there are thousands of different copies." ~ French Proverb</Talk>
+        </Dialog>
+        <Dialog id="16" pilot="1">
+            <Talk>"Gravitation cannot be held responsible for people falling in love" ~ Albert Einstein</Talk>
+        </Dialog>
+        <Dialog id="17" pilot="4">
+            <Talk>"A man falls in love through his eyes, a woman through her ears." ~ Woodrow Wyatt</Talk>
+        </Dialog>
+        <Dialog id="18" pilot="1">
+            <Talk>"I was nauseous and tingly all over. I was either in love or I had smallpox." ~ Woody Allen</Talk>
+        </Dialog>
+        <Dialog id="19" pilot="4">
+            <Talk>"A guy knows he's in love when he loses interest in his car for a couple of days." ~ Tim Allen</Talk>
+        </Dialog>
+        <Dialog id="20" pilot="2">
+            <Talk>"I am a marvelous housekeeper. Every time I leave a man I keep his house." ~ Zsa Zsa Gabor</Talk>
+        </Dialog>
+        <Dialog id="21" pilot="2">
+            <Talk>"Love is what makes two people sit in the middle of a bench when there is plenty of room at both the ends." ~ Unknown</Talk>
+        </Dialog>
+        <Dialog id="22" pilot="3">
+            <Talk>"Marriage is the triumph of imagination over intelligence. Second marriage is the triumph of hope over experience." ~ Samuel Johnson</Talk>
+        </Dialog>
+        <Dialog id="23" pilot="1">
+            <Talk>"This is true love! Do you think this happens everyday?" ~ The Princess Bride</Talk>
+        </Dialog>
+        <Dialog id="24" pilot="3">
+            <Talk>"Love means never having to say you're sorry." ~ Love Story</Talk>
+        </Dialog>
+        <Dialog id="25" pilot="4">
+            <Talk>"Don't forget I'm just a girl, standing in front of a boy, asking him to love her." ~ Notting Hill</Talk>
+        </Dialog>
+        <Dialog id="26" pilot="4">
+            <Talk>"It was a million tiny little things that, when you added them all up, they meant we were supposed to be together... and I knew it." ~ Sleepless In Seattle</Talk>
+        </Dialog>
+        <Dialog id="27" pilot="3">
+            <Talk>"The truth is... I gave my heart away a long time ago, my whole heart... and I never really got it back." ~ Sweet Home Alabama</Talk>
+        </Dialog>
+        <Dialog id="28" pilot="3">
+            <Talk>"The greatest thing you'll ever learn is just to love and be loved in return." ~ Moulin Rouge</Talk>
+        </Dialog>
+        <Dialog id="29" pilot="3">
+            <Talk>"Love cannot be found where it doesn't exist, nor can it be hidden where it truly does." ~ Kissing a Fool</Talk>
+        </Dialog>
+        <Dialog id="30" pilot="2">
+            <Talk>"You are what I never knew I always wanted." ~ Fools Rush In</Talk>
+        </Dialog>
+        <Dialog id="31" pilot="3">
+            <Talk>"Don't cry when the sun is gone, because the tears won't let you see the stars." ~ Violeta Parra</Talk>
+        </Dialog>
+        <Dialog id="32" pilot="2">
+            <Talk>"When one door closes another door opens; but we so often look so long and so regretfully upon the closed door, that we do not see the ones which open for us." ~ Alexander Graham Bell</Talk>
+        </Dialog>
+        <Dialog id="33" pilot="3">
+            <Talk>"To fall in love is awfully simple, but to fall out of love is simply awful." ~ Bess Myerson</Talk>
+        </Dialog>
+        <Dialog id="34" pilot="3">
+            <Talk>"The saddest thing in the world, is loving someone who used to love you." ~ Anonymous</Talk>
+        </Dialog>
+        <Dialog id="35" pilot="4">
+            <Talk>"It takes a minute to like someone, and hour to love someone, but to forget someone takes a lifetime." ~ Anonymous</Talk>
+        </Dialog>
+
+    </Dialogs>
+</DialogCollection>

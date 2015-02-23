@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
-
+using SmartLocalization;
 
 // starcard contains level,type,sprite
 public struct StarData
@@ -104,8 +104,30 @@ public class StarLoader : MonoBehaviour
 			starAlbum = b.Deserialize(m) as StarAlbum[];
 		}
 
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		SmartCultureInfo cultureInfo = thisLanguageManager.GetSupportedSystemLanguage();
+		
+//		if(thisLanguageManager.IsLanguageSupportedEnglishName(cultureInfo.englishName))
+//		{
+//			thisLanguageManager.ChangeLanguage(cultureInfo.languageCode);
+//			//thisLanguageManager.ChangeLanguage("fr");
+//		}
+//		else
+//		{
+//			Debug.Log("Language is not supported");
+//			thisLanguageManager.ChangeLanguage("en");
+//		}
+		
+		if(cultureInfo.englishName == "Korean")
+		{
+			starAsset = Resources.Load("starCollection") as TextAsset;
+		}
+		else
+		{
+			starAsset = Resources.Load("starCollection_en") as TextAsset;
+		}
 
-		starAsset = Resources.Load("starCollection") as TextAsset;
+		//starAsset = Resources.Load("starCollection") as TextAsset;
 		
 		XmlSerializer serializer = new XmlSerializer(typeof(StarContainer));
 		StringReader stringReader = new StringReader(starAsset.text);

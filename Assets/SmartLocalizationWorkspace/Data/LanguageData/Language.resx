@@ -116,8 +116,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Alien.Pop" xml:space="preserve">
+		<value>Alien is pop. Destory it before summon space storm.</value>
+	</data>
 	<data name="BlackHole" xml:space="preserve">
 		<value>Click black hole to teleport 10 times the speed of engine.</value>
+	</data>
+	<data name="Event.Earth" xml:space="preserve">
+		<value>You reached Earth</value>
+	</data>
+	<data name="Event.Hubble" xml:space="preserve">
+		<value>you discoverd Hubble</value>
+	</data>
+	<data name="Event.ISS" xml:space="preserve">
+		<value>you discoverd ISS</value>
+	</data>
+	<data name="Event.Jupiter" xml:space="preserve">
+		<value>You have got Jupiter</value>
+	</data>
+	<data name="Event.Mars" xml:space="preserve">
+		<value>You have got Mars</value>
+	</data>
+	<data name="Event.Moon" xml:space="preserve">
+		<value>You have got Moon</value>
+	</data>
+	<data name="Event.Neptune" xml:space="preserve">
+		<value>you have got Neptune</value>
+	</data>
+	<data name="Event.Saturn" xml:space="preserve">
+		<value>You have got Saturn</value>
+	</data>
+	<data name="Event.Uranus" xml:space="preserve">
+		<value>You have got Uranus</value>
 	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Constellation</value>
@@ -136,6 +166,21 @@
 	</data>
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>Upgrade</value>
+	</data>
+	<data name="Star.Common" xml:space="preserve">
+		<value>Star Common</value>
+	</data>
+	<data name="Star.Discoverd" xml:space="preserve">
+		<value>You have discoverd</value>
+	</data>
+	<data name="Star.Hero" xml:space="preserve">
+		<value>Star Hero</value>
+	</data>
+	<data name="Star.Legend" xml:space="preserve">
+		<value>Star Legend</value>
+	</data>
+	<data name="Star.Pop" xml:space="preserve">
+		<value>Constellation is Pop up, Kepp cliking to get star you can upgrade weapon by stars.</value>
 	</data>
 	<data name="Store.Product1Result" xml:space="preserve">
 		<value>You are VIP now. you will get 2 times golds from now</value>
@@ -156,6 +201,15 @@
 		<value>I really really appreciate your purchase. 
 I am going to make better game at next time.</value>
 	</data>
+	<data name="Tutorial.1" xml:space="preserve">
+		<value>Tutorial 1</value>
+	</data>
+	<data name="Tutorial.2" xml:space="preserve">
+		<value>Tutorial 2</value>
+	</data>
+	<data name="Tutorial.3" xml:space="preserve">
+		<value>Tutorial 3</value>
+	</data>
 	<data name="UI.Accel" xml:space="preserve">
 		<value>times Accel</value>
 	</data>
@@ -173,6 +227,9 @@ I am going to make better game at next time.</value>
 	</data>
 	<data name="UI.Close" xml:space="preserve">
 		<value>Close lable for button</value>
+	</data>
+	<data name="UI.ColonyComplete" xml:space="preserve">
+		<value>The new colony is completed, such as the Earth.</value>
 	</data>
 	<data name="UI.ColonyProgress" xml:space="preserve">
 		<value>Colony Progress</value>
@@ -301,7 +358,7 @@ Thanks for your purchase.</value>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Yes</value>
 	</data>
-	<data name="UI.ColonyComplete" xml:space="preserve">
-		<value>The new colony is completed, such as the Earth.</value>
+	<data name="Whale.Pop" xml:space="preserve">
+		<value>Space Whale is pop. Keep cliking to get coins.</value>
 	</data>
 </root>

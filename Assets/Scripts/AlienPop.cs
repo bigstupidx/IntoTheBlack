@@ -67,7 +67,7 @@ public class AlienPop : MonoBehaviour
 	{
 		timer -= Time.deltaTime;
 
-		timerText.text = string.Concat(level, " 레벨 ", timer.ToString("N1"));
+		timerText.text = string.Concat(level, " Level ", timer.ToString("N1"));
 
 		if (timer < 0)
 		{

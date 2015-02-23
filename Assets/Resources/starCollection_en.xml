@@ -1,0 +1,268 @@
+<StarCollection>
+    <Stars>
+        <Star id="0" level="1" filename="AND" name="Andromeda">
+            <Desc>Andromeda is one of the 48 constellations listed by the 2nd-century Greco-Roman astronomer Ptolemy and remains one of the 88 modern constellations.</Desc>
+        </Star>
+        <Star id="1" level="1" filename="ANT" name="Antlia" >
+            <Desc>It was originally named Antlia pneumatica (Machine Pneumatique in French) to commemorate the air pump invented by the French physicist Denis Papin.</Desc>
+        </Star>
+        <Star id="2" level="1" filename="APS" name="Apus">
+            <Desc>The name Apus is derived from the Greek apous, meaning "without feet". This referred to the Western misconception that the bird-of-paradise had no feet, which arose because the only specimens available in the West had their feet and wings removed. Such specimens began to arrive in Europe in 1522, when the survivors of Ferdinand Magellan's expedition brought them home.</Desc>
+        </Star>
+        <Star id="3" level="1" filename="AQL" name="Aquarius">
+            <Desc>In Greek mythology, Aquarius is sometimes associated with Troy. The myth has is that a young boy named Ganymede was out tending to his fathers sheep when Zeus took interest in this young beautiful boy. Zeus then turned himself into an eagle and carried Ganymede to mount. Ide where Ganymede would have to serve drinks to Zeus. but one day Ganymede didn't want to serve drinks anymore so he poured out Zeus wine and water witch cause a great flood. It was then said instead of Zeus getting mad he gave Ganymede immortality and gave him the constellation Aquarius.</Desc>
+        </Star>
+        <Star id="4" level="1" filename="AQR" name="Aquila">
+            <Desc>Aquila is a constellation in the northern sky. Its name is Latin for 'eagle' and it represents the bird who carried Zeus/Jupiter's thunderbolts in Greco-Roman mythology.</Desc>
+        </Star>
+        <Star id="5" level="1" filename="ARA" name="Ara">
+            <Desc>In illustrations, Ara is usually depicted as an altar with its smoke 'rising' southward. However, depictions of Ara often vary in their details. In the early days of printing, a 1482 woodcut of Gaius Julius Hyginus's classic Poeticon Astronomicon depicts the altar as surrounded by demons.</Desc>
+        </Star>
+        <Star id="6" level="1" filename="ARI" name="Aries">
+            <Desc> Aries is now recognized as an official constellation, albeit as a specific region of the sky, by the International Astronomical Union. It was originally defined in ancient texts as a specific pattern of stars, and has remained a constellation since ancient times; it now includes the ancient pattern as well as the surrounding stars.</Desc>
+        </Star>
+        <Star id="7" level="1" filename="AUR" name="Auriga">
+            <Desc> In Greek mythology, Auriga is often identified as the mythological Greek hero Erichthonius of Athens, the chthonic son of Hephaestus who was raised by the goddess Athena. Erichthonius was generally credited to be the inventor of the quadriga, the four-horse chariot, which he used in the battle against the usurper Amphictyon, the event that made Erichthonius the king of Athens. His chariot was created in the image of the Sun's chariot, the reason Zeus placed him in the heavens.</Desc>
+        </Star>
+        <Star id="8" level="1" filename="BOO" name="Boötes">
+            <Desc> The name Boötes was first used by Homer in his Odyssey as a celestial reference point for navigation, described as (late-setting) or "slow to set", translated as the (Plowman). Exactly whom Boötes is supposed to represent in Greek mythology is not clear. According to one version, he was a son of Demeter, Philomenus, twin brother of Plutus, a ploughman who drove the oxen in the constellation Ursa Major.</Desc>
+        </Star>
+        <Star id="9" level="1" filename="CAE" name="Caelum">
+            <Desc>Caelum was first introduced in the eighteenth century by Nicolas Louis de Lacaille, a French astronomer who introduced thirteen other southern constellations at the same time.The name Lacaille gave the constellation was originally romanized to Caelum Scalptorium (The Engraver's Chisel)</Desc>
+        </Star>
+        <Star id="10" level="2" filename="CAM" name="Camelopardalis">
+            <Desc>Camelopardalis /kəˌmɛləˈpɑrdəlɨs/ or the Giraffe constellation is a large, faint grouping of stars in the northern sky. The constellation was introduced in 1612 (or 1613) by Petrus Plancius. Some older astronomy books give an alternative spelling of the name, Camelopardus.</Desc>
+        </Star>
+        <Star id="11" level="2" filename="CAP" name="Capricornus">
+            <Desc> Capricornus /ˌkæprɨˈkɔrnəs/ is one of the constellations of the zodiac; it is often called Capricorn, especially when referring to the corresponding astrological sign. Its name is Latin for "horned goat" or "goat horn", and it is commonly represented in the form of a sea-goat: a mythical creature that is half goat, half fish</Desc>
+        </Star>
+        <Star id="12" level="2" filename="CAR" name="Carina">
+            <Desc>Carina was once a part of Argo Navis, the great ship of Jason and the Argonauts who searched for the Golden Fleece. The constellation of Argo was introduced in ancient Greece. However, Nicolas Louis de Lacaille divided Argo into three component constellations in 1763, including Carina, the Keel.</Desc>
+        </Star>
+        <Star id="13" level="2" filename="CAS" name="Cassiopeia">
+            <Desc> The constellation is named after Cassiopeia, the queen of Aethiopia. Cassiopeia was the wife of Cepheus, King of Aethiopia and mother of Princess Andromeda. Cepheus and Cassiopeia were placed next to each other among the stars, along with Andromeda. She was placed in the sky as a punishment for her boast that her daughter Andromeda was more beautiful than the Nereids or, alternatively, that she herself was more beautiful than the sea nymphs.</Desc>
+        </Star>
+        <Star id="14" level="2" filename="CEN" name="Centaurus">
+            <Desc> According to the Roman poet Ovid (Fasti v.379), the constellation honors the centaur Chiron, who was tutor to many of the earlier Greek heroes including Heracles (Hercules), Theseus, and Jason, the leader of the Argonauts. However, most authorities consider Sagittarius to be the civilized Chiron, while Centaurus represents a more uncouth member of the species. The legend associated with Chiron says that he was accidentally poisoned with an arrow shot by Hercules, and was subsequently placed in the heavens.</Desc>
+        </Star>
+        <Star id="15" level="2" filename="CEP" name="Cepheus">
+            <Desc>Cepheus was the King of Aethiopia. He was married to Cassiopeia and was the father of Andromeda, both of whom are immortalized as modern day constellations along with Cepheus.</Desc>
+        </Star>
+        <Star id="16" level="2" filename="CET" name="Cetus">
+            <Desc>Cetus may have originally been associated with a whale, which would have had mythic status amongst Mesopotamian cultures. It is often now called the Whale, though it is most strongly associated with Cetus the sea-monster, who was slain by Perseus as he saved the princess Andromeda from Poseidon's wrath. Cetus is located in a region of the sky called "The Sea" because many water-associated constellations are placed there, including Eridanus, Pisces, Piscis Austrinus, Capricornus, and Aquarius.</Desc>
+        </Star>
+        <Star id="17" level="2" filename="CHA" name="Chamaeleon">
+            <Desc>Chamaeleon was one of twelve constellations created by Petrus Plancius from the observations of Pieter Dirkszoon Keyser and Frederick de Houtman. It first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Plancius and Jodocus Hondius. Johann Bayer was the first uranographer to put Chamaeleon in a celestial atlas. It was one of many constellations created by European explorers in the 15th and 16th centuries out of unfamiliar Southern Hemisphere stars</Desc>
+        </Star>
+        <Star id="18" level="2" filename="CIR" name="Circinus">
+            <Desc> In 1756, French astronomer Nicolas Louis de Lacaille introduced the constellation of Circinus with the French name le Compas, representing a pair of dividing compasses. It had first been depicted on one of Lacaille's maps in 1754, but it was unnamed.</Desc>
+        </Star>
+        <Star id="19" level="2" filename="CMA" name="Canis Major">
+            <Desc>In Greek Mythology, Canis Major represented the dog Laelaps, a gift from Zeus to Europa; or sometimes the hound of Procris, Diana's nymph; or the one given by Aurora to Cephalus, so famed for its speed that Zeus elevated it to the sky.</Desc>
+        </Star>
+        <Star id="20" level="3" filename="CMI" name="Canis Minor">
+            <Desc>Though strongly associated with the Classical Greek uranographic tradition, Canis Minor originates from ancient Mesopotamia. Procyon and Gomeisa were called MASH.TAB.BA or "twins" in the Three Stars Each tablets, dating to around 1100 BC.</Desc>
+        </Star>
+        <Star id="21" level="3" filename="CNC" name="Cancer">
+            <Desc> There also appears to be a strong connection between the Babylonian constellation and ideas of death and a passage to the underworld, which may be the origin of these ideas in later Greek myths associated with Hercules and the Hydra.</Desc>
+        </Star>
+        <Star id="22" level="3" filename="COL" name="Columba">
+            <Desc>Plancius originally named the constellation Columba Noachi (Noah's Dove), referring to the dove that gave Noah the information that the Great Flood was receding</Desc>
+        </Star>
+		<Star id="23" level="3" filename="COM" name="Coma Berenices">
+            <Desc> In 243 BC, during the Third Syrian War, Ptolemy undertook a dangerous expedition against the Seleucids, who had murdered his sister. His newlywed bride, Berenice, swore to the goddess Aphrodite to sacrifice her long, blonde hair, of which she was extremely proud, if her husband returned safely. He did, so she cut her hair and placed it in the goddess's temple. By the next morning the hair had disappeared. To appease the furious king the court astronomer, Conon, announced that the offering had so pleased the goddess that she had placed it in the sky.</Desc>
+        </Star>
+        <Star id="24" level="3" filename="CRA" name="Corona Australis">
+            <Desc>Corona Australis has been associated with the myth of Bacchus and Stimula. Jupiter had impregnated Stimula, causing Juno to become jealous. Juno convinced Stimula to ask Jupiter to appear in his full splendor, which the mortal woman could not handle, causing her to burn. After Bacchus, Stimula's unborn child, became an adult and the god of wine, he honored his deceased mother by placing a wreath in the sky.</Desc>
+        </Star>
+        <Star id="25" level="3" filename="CRB" name="Corona Borealis">
+            <Desc> In Greek mythology, Corona Borealis was sometimes considered to represent a crown that was given by Dionysus to Ariadne, the daughter of Minos of Crete. When she wore the crown to her wedding, where she married Dionysus, he placed her crown in the heavens to commemorate the wedding. In Welsh mythology, it was called Caer Arianrhod, "the Castle of the Silver Circle", and was the heavenly abode of the Lady Arianrhod.</Desc>
+        </Star>
+        <Star id="26" level="3" filename="CRT" name="Crater">
+            <Desc>Crater is identified with a story from Greek mythology in which a crow or raven serves Apollo, and is sent to fetch water, but it rests lazily on the journey, and after finally obtaining the water in a cup, takes back a water snake as an excuse. According to the myth, Apollo saw through the fraud, and angrily cast the crow, cup, and snake, into the sky. The constellations of Corvus the crow and Hydra the water-snake are also identified with this myth.</Desc>
+        </Star>
+        <Star id="27" level="3" filename="CRU" name="Crux">
+            <Desc>Crux was visible to the Ancient Greeks; Ptolemy regarded it as part of the constellation Centaurus.It was entirely visible as far north as Britain in the fourth millennium BC. However, the precession of the equinoxes gradually lowered its stars below the European horizon, and they were eventually forgotten by the inhabitants of northern latitudes.By AD 400, most of the constellation never rose above the horizon for Athenians.</Desc>
+        </Star>
+        <Star id="28" level="3" filename="CRV" name="Corvus">
+            <Desc> The Greek figure of Corvus is modeled on the Babylonian Raven (MUL.UGA.MUSHEN), which was similarly placed sitting on the tail of the Serpent (Greek Hydra). The Babylonian constellation was sacred to Adad, the god of rain and storm; in the second Millennium it would have risen just before the start of the autumnal rainy season.</Desc>
+        </Star>
+        <Star id="29" level="3" filename="CVN" name="Canes Venatici">
+            <Desc> When the Greek astronomer Ptolemy's Almagest was translated from Greek to Arabic, the translator Johannitius (following Alberuni) did not know the Greek word and rendered it as the nearest-looking Arabic word. When the Arabic text was translated into Latin, the translator Gerard of Cremona (probably in Spain) mistook the Arabic word كلاب for kilāb (the plural of كلب kalb), meaning "dogs", writing hastile habens canes</Desc>
+        </Star>
+        <Star id="30" level="4" filename="CYG" name="Cygnus">
+            <Desc>In Greek mythology, Cygnus has been identified with several different legendary swans. Zeus disguised himself as a swan to seduce Leda, Spartan king Tyndareus's wife, who gave birth to the Gemini, Helen of Troy and Clytemnestra. Orpheus was transformed into a swan after his murder, and was said to have been placed in the sky next to his lyre (Lyra); and the King Cygnus was transformed into a swan.</Desc>
+        </Star>
+        <Star id="31" level="4" filename="DEL" name="Delphinus">
+            <Desc>According to the first Greek god Poseidon wanted to marry Amphitrite, a beautiful nereid. She, however, wanting to protect her virginity, fled to the Atlas mountains. Her suitor then sent out several searchers, among them a certain Delphinus. Delphinus accidentally stumbled upon her and was able to persuade Amphitrite to accept Poseidon's wooing. Out of gratitude the god placed the image of a dolphin among the stars.</Desc>
+        </Star>
+        <Star id="32" level="4" filename="DOR" name="Dorado">
+            <Desc>The constellation was also known in the 17th and 18th century as Xiphias, the swordfish, first attested in Johannes Kepler's edition of Tycho Brahe's star list in the Rudolphine Tables of 1627. The name Dorado ultimately become dominant and was adopted by the IAU.</Desc>
+        </Star>
+        <Star id="33" level="4" filename="DRA" name="Draco">
+            <Desc>Dragons in Greek mythology that may have inspired the constellation's name include Ladon, the dragon who guarded the golden apples of the Hesperides. Hercules killed Ladon during his 12 labors; he was tasked with stealing the golden apples. The constellation of Hercules is depicted near Draco.</Desc>
+        </Star>
+        <Star id="34" level="4" filename="EQU" name="Equuleus">
+            <Desc>In Greek mythology, one myth associates Equuleus with the foal Celeris (meaning swiftness or speed), who was the offspring or brother of the winged horse Pegasus. Celeris was given to Castor by Mercury. Other myths say that Equuleus is the horse struck from Poseidon's trident, during the contest between him and Athena when deciding which would be the superior. Because this section of stars rises before Pegasus, it is often called Equus Primus, or the First Horse. Equuleus is also linked to the story of Philyra and Saturn.</Desc>
+        </Star>
+        <Star id="35" level="4" filename="ERI" name="Eridanus">
+            <Desc>According to one theory, the Greek constellation takes its name from the Babylonian constellation known as the Star of Eridu (MUL.NUN.KI). Eridu was an ancient city in the extreme south of Babylonia; situated in the marshy regions it was held sacred to the god Enki-Ea who ruled the cosmic domain of the Abyss - a mythical conception of the fresh-water reservoir below the Earth's surface.</Desc>
+        </Star>
+        <Star id="36" level="4" filename="FOR" name="Fornax">
+            <Desc>De Lacaille originally called the constellation "Fornax Chemica" (the chemical furnace), representing a small solid fuel vessel used for heating chemical experiments.</Desc>
+        </Star>
+        <Star id="37" level="4" filename="GEM" name="Gemini">
+            <Desc>In Babylonian astronomy, the stars Castor and Pollux were known as the Great Twins (MUL.MASH.TAB.BA.GAL.GAL). The Twins were regarded as minor gods and were called Meshlamtaea and Lugalirra, meaning respectively 'The One who has arisen from the Underworld' and the 'Mighty King'. Both names can be understood as titles of Nergal, the major Babylonian god of plague and pestilence, who was king of the Underworld.</Desc>
+        </Star>
+        <Star id="38" level="4" filename="GRU" name="Grus">
+            <Desc>An alternative name for the constellation, Phoenicopterus (Latin - flamingo), was used briefly during the early 17th century, seen in the 1605 work Cosmographiae Generalis by Paul Merula of Leiden University and a c. 1625 globe by Dutch globe maker Pieter van den Keere. Astronomer Ian Ridpath has reported the symbolism likely came from Plancius originally, who had worked with both of these people. Grus and the nearby constellations Phoenix, Tucana and Pavo are collectively called the "Southern Birds"</Desc>
+        </Star>
+        <Star id="39" level="4" filename="HER" name="Hercules">
+            <Desc>On his way back to Mycenae from Iberia having obtained the Cattle of Geryon as his tenth labour Heracles came to Liguria in North-Western Italy where he engaged in battle with two giants, Albion and Bergion or Dercynus. The opponents were strong; Hercules was in a difficult position so he prayed to his father Zeus for help. With the aegis of Zeus, Heracles won the battle. It was this kneeling position of Heracles when prayed to his father Zeus that gave the name "the Kneeler"</Desc>
+        </Star>
+        <Star id="40" level="5" filename="HOR" name="Horologium">
+            <Desc>Horologium was one of 14 constellations created by Abbé Nicolas Louis de Lacaille during his expedition to the Cape of Good Hope.He originally labeled it Horologium Oscillitorium, the Latin name for a pendulum clock, to honour its inventor Christiaan Huygens and his book Horologium Oscillatorium.</Desc>
+        </Star>
+        <Star id="41" level="5" filename="HYA" name="Hydra">
+            <Desc>The shape of Hydra resembles a twisting snake, and features as such in some Greek myths. One myth associates it with a water snake that a crow served Apollo in a cup when it was sent to fetch water; Apollo saw through the fraud, and angrily cast the crow, cup, and snake, into the sky. It is also associated with the monster Hydra, with its many heads, killed by Hercules, represented in another constellation.</Desc>
+        </Star>
+        <Star id="42" level="5" filename="HYI" name="Hydrus">
+            <Desc>The French explorer and astronomer Nicolas Louis de Lacaille called it l’Hydre Mâle on the 1756 version of his planisphere of the southern skies, distinguishing it from the feminine Hydra.</Desc>
+        </Star>
+        <Star id="43" level="5" filename="IND" name="Indus">
+            <Desc>The constellation was one of twelve created by Petrus Plancius from the observations of Pieter Dirkszoon Keyser and Frederick de Houtman and it first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Plancius with Jodocus Hondius.</Desc>
+        </Star>
+        <Star id="44" level="5" filename="LAC" name="Lacerta">
+            <Desc>Lacerta is one of the 88 modern constellations defined by the International Astronomical Union. Its name is Latin for lizard. A small, faint constellation, it was created in 1687 by the astronomer Johannes Hevelius</Desc>
+        </Star>
+        <Star id="45" level="5" filename="LEO" name="Leo">
+            <Desc>In Greek mythology, Leo was identified as the Nemean Lion which was killed by Heracles (Hercules to the Romans) during the first of his twelve labours. The Nemean Lion would take women as hostages to its lair in a cave, luring warriors from nearby towns to save the damsel in distress, to their misfortune.</Desc>
+        </Star>
+        <Star id="46" level="5" filename="LEP" name="Lepus">
+            <Desc>Lepus is most often represented as a rabbit being hunted by Orion, whose hunting dogs (Canis Major and Canis Minor) pursue it. The constellation is also associated with some lunar mythology, including the Moon rabbit.</Desc>
+        </Star>
+        <Star id="47" level="5" filename="LIB" name="Libra">
+            <Desc>Libra was known in Babylonian astronomy as MUL Zibanu (the "scales" or "balance"), or alternatively as the Claws of the Scorpion. The scales were held sacred to the sun god Shamash, who was also the patron of truth and justice. It was also seen as the Scorpion's Claws in ancient Greece</Desc>
+        </Star>
+        <Star id="48" level="5" filename="LMI" name="Leo Minor">
+            <Desc>The classical astronomers Aratus and Ptolemy had noted the region of what is now Leo Minor to be undefined and not containing any distinctive pattern; Ptolemy classified the stars in this area as amorphōtoi (not belonging to a constellation outline) within the constellation Leo.</Desc>
+        </Star>
+        <Star id="49" level="5" filename="LUP" name="Lupus">
+            <Desc>The Greek constellation is probably based on the Babylonian figure known as the Mad Dog (UR.IDIM). This was a strange hybrid creature that combined the head and torso of a man with the legs and tail of a lion (the cuneiform sign 'UR' simply refers to a large carnivore; lions, wolves and dogs are all included). It is often found in association with the sun god and another mythical being called the Bison-man, which is supposedly related to the Greek constellation of Centaurus.</Desc>
+        </Star>
+        <Star id="50" level="5" filename="LYN" name="Lynx">
+            <Desc>Johannes Hevelius defined the constellation in the 17th century because he wanted to fill the open gap between the constellations Ursa Major and Auriga. He supposedly named it Lynx because of its faintness: only the lynx-eyed (or those of good sight) would have been able to recognize it.</Desc>
+        </Star>
+        <Star id="51" level="6" filename="LYR" name="Lyra">
+            <Desc>In Greek mythology, Lyra was associated with the myth of Orpheus, the musician who was killed by the Bacchantes. After his death, his lyre was thrown into the river; Zeus sent an eagle to retrieve the lyre, and ordered both of them to be placed in the sky.</Desc>
+        </Star>
+        <Star id="52" level="6" filename="MEN" name="Mensa">
+            <Desc>Mensa was created by Nicolas Louis de Lacaille out of dim Southern Hemisphere stars in honor of Table Mountain, a South African mountain. Although the stars of Mensa do not feature in any ancient mythology, the mountain it is named after has a rich mythology</Desc>
+        </Star>
+        <Star id="53" level="6" filename="MIC" name="Microscopium">
+            <Desc> The stars that now comprise Microscopium may formerly have belonged to the hind feet of Sagittarius. However, this is uncertain as, while its stars seem to be referred to by Al-Sufi as having been seen by Ptolemy, Al-Sufi does not specify their exact positions.</Desc>
+        </Star>
+        <Star id="54" level="6" filename="MON" name="Monoceros">
+            <Desc>Monoceros is a relatively modern constellation. Its first certain appearance was on a globe created by the Dutch cartographer Petrus Plancius in 1612 or 1613 and it was later charted by Jakob Bartsch as Unicornu on his star chart of 1624.</Desc>
+        </Star>
+        <Star id="55" level="6" filename="MUS" name="Musca">
+            <Desc>Musca was one of the twelve constellations established by the Dutch astronomer Petrus Plancius from the observations of the southern sky by the Dutch explorers Pieter Dirkszoon Keyser and Frederick de Houtman, who had sailed on the first Dutch trading expedition, known as the Eerste Schipvaart, to the East Indies.</Desc>
+        </Star>
+        <Star id="56" level="6" filename="NOR" name="Norma">
+            <Desc>Norma, originally named l’Equerre et la Regle in French, was one of the constellations invented by Abbé de Lacaille in the middle of the 1750s, when he was measuring about 10,000 stars at the Cape of Good Hope. Norma represents a carpenter's square, used in the Age of Exploration by carpenters on exploratory vessels.</Desc>
+        </Star>
+        <Star id="57" level="6" filename="OCT" name="Octans">
+            <Desc>Octans was one of 14 constellations created by Nicolas Louis de Lacaille during his expedition to the Cape of Good Hope, and was originally named "l’Octans de Reflexion", French for “the reflecting octant”. It was part of his catalogue of the southern sky, the Coelum Australe Stelliferum, which was published posthumously in 1763.</Desc>
+        </Star>
+        <Star id="58" level="6" filename="OPH" name="Ophiuchus">
+            <Desc>There is no evidence of the constellation preceding the classical era, and in Babylonian astronomy, a "Sitting Gods" constellation seems to have been located in the general area of Ophiuchus. However, Gavin White proposes that Ophiuchus may in fact be remotely descended from this Babylonian constellation, representing Nirah, a serpent-god who was sometimes depicted with his upper half human but with serpents for legs.</Desc>
+        </Star>
+        <Star id="59" level="6" filename="ORI" name="Orion">
+            <Desc> Orion's current name derives from Greek mythology, in which Orion was a gigantic, supernaturally strong hunter of ancient times, born to Euryale, a Gorgon, and Poseidon (Neptune), god of the sea in the Graeco-Roman tradition. One myth recounts Gaia's rage at Orion, who dared to say that he would kill every animal on the planet. The angry goddess tried to dispatch Orion with a scorpion. This is given as the reason that the constellations of Scorpius and Orion are never in the sky at the same time. However, Ophiuchus, the Serpent Bearer, revived Orion with an antidote. This is said to be the reason that the constellation of Ophiuchus stands midway between the Scorpion and the Hunter in the sky.</Desc>
+        </Star>
+        <Star id="60" level="7" filename="PAV" name="Pavo">
+            <Desc>According to Mark Chartrand, former executive director of the National Space Institute, Plancius may not have been the first to designate this group of stars as a peacock: "In Greek myth the stars that are now the Peacock were Argos [or Argus], builder of the ship Argo. He was changed by the goddess Juno into a peacock and placed in the sky along with his ship."Indeed, the peacock "symboliz[ed] the starry firmament" for the Greeks, and the goddess Hera was believed to drive through the heavens in a chariot drawn by peacocks.</Desc>
+        </Star>
+        <Star id="61" level="7" filename="PEG" name="Pegasus">
+            <Desc>Pegasus was the one who delivered Medusa's head to Polydectes, after which he travelled to Mount Olympus in order to be the bearer of thunder and lightning for Zeus. Eventually, he became the horse to Bellerophon, who was asked to kill the Chimera and succeeded with the help of Athena and Pegasus. Despite this success, after the death of his children, Bellerophon asked Pegasus to take him to Mount Olympus. Though Pegasus agreed, he plummeted back to Earth after Zeus either threw a thunderbolt at him or made Pegasus buck him off.</Desc>
+        </Star>
+        <Star id="62" level="7" filename="PER" name="Perseus">
+            <Desc>Perseus rescued the princess Andromeda from Cetus by turning it to stone with Medusa's head. He turned Polydectes and his followers to stone and appointed Dictys the fisherman king. Perseus and Andromeda married and had six children. In the sky, Perseus lies near the constellations Andromeda, Cepheus, Cassiopeia (Andromeda's mother), Cetus, and Pegasus.</Desc>
+        </Star>
+        <Star id="63" level="7" filename="PHE" name="Phoenix">
+            <Desc>The Chinese incorporated Phoenix's brightest star, Ankaa (Alpha Phoenicis), and stars from the adjacent constellation Sculptor to depict Bakui, a net for catching birds. Phoenix and the neighbouring constellation of Grus together were seen by Julius Schiller as portraying Aaron the High Priest. These two constellations, along with nearby Pavo and Tucana, are called the Southern Birds.</Desc>
+        </Star>
+        <Star id="64" level="7" filename="PIC" name="Pictor">
+            <Desc>Nicolas Louis de Lacaille labelled the constellation Equuleus Pictorius on his 1763 chart,the word "Equuleus" meaning ass, small horse, or easel—perhaps from an old custom among artists of carrying a canvas on a donkey.</Desc>
+        </Star>
+        <Star id="65" level="7" filename="PSA" name="Piscis Austrinus">
+            <Desc>In Greek mythology, this constellation is known as the Great Fish and it is portrayed as swallowing the water being poured out by Aquarius, the water-bearer constellation. The two fish of the constellation Pisces are said to be the offspring of the Great Fish.</Desc>
+        </Star>
+        <Star id="66" level="7" filename="PSC" name="Pisces">
+            <Desc>Pisces is associated with Aphrodite and Eros, who escaped from the monster Typhon by leaping into the sea and transforming themselves into fish. In order not to lose each other, they tied themselves together with rope. The Romans adopted the Greek legend, with Venus and Cupid acting as the counterparts for Aphrodite and Eros. The knot of the rope is marked by Alpha Piscium (α Psc), also called Al-Rischa ("the cord" in Arabic).</Desc>
+        </Star>
+        <Star id="67" level="7" filename="PUP" name="Puppis">
+            <Desc>Puppis is the largest of the three constellations in square degrees. It is one of the 88 modern constellations recognized by the International Astronomical Union.</Desc>
+        </Star>
+        <Star id="68" level="7" filename="PYX" name="Pyxis">
+            <Desc>In ancient Chinese astronomy, Alpha, Beta and Gamma Pyxidis formed part of Tianmiao a Celestial Temple honouring the ancestors of the Emperor, along with stars from neighbouring Antlia.</Desc>
+        </Star>
+        <Star id="69" level="7" filename="RET" name="Reticulum">
+            <Desc>The name was later Latinized to Reticulum in his star catalogue Coelum Australe Stelliferum. In 1810, the stars of Reticulum were used by William Croswell to produce the constellation Marmor Sculptile, which represented the bust of Christopher Columbus, but this did not catch on among astronomers.</Desc>
+        </Star>
+        <Star id="70" level="8" filename="SCL" name="Sculptor">
+            <Desc>The official constellation boundaries, as set by Eugène Delporte in 1930, are defined by a polygon of 6 segments.</Desc>
+        </Star>
+        <Star id="71" level="8" filename="SCO" name="Scorpius">
+            <Desc>The god Apollo, Artemis's twin brother, grew angry and sent a scorpion to attack Orion. After Orion was killed, Artemis asked Zeus to put Orion up in the sky. So every winter Orion hunts in the sky, but every summer he flees as the constellation of the scorpion comes.</Desc>
+        </Star>
+        <Star id="72" level="8" filename="SCT" name="Scutum">
+            <Desc>Coincidentally, the Chinese also associated these stars with battle armor, incorporating them into the larger asterism known as Tien Pien, i.e., the Heavenly Casque (or Helmet).</Desc>
+        </Star>
+        <Star id="73" level="8" filename="SERCP" name="Serpens">
+            <Desc>In Greek Mythology, Serpens represents a snake held by Asclepius, a healer. Asclepius, represented in the sky by the constellation Ophiuchus, which splits Serpens into two distinct halves, was known for killing a snake that was resurrected because a different snake had placed a certain herb on it before its "death". Serpens is depicted as either winding around Ophiuchus in the night sky or simply passing through him, although the precise reason for either of these is unknown.</Desc>
+        </Star>
+        <Star id="74" level="8" filename="SEX" name="Sextans">
+            <Desc>The constellation is the location of the field studied by the COSMOS project, undertaken by the Hubble Space Telescope. Sextans B is a fairly bright dwarf irregular galaxy at magnitude 6.6, 4.3 million light-years from Earth. It is part of the Local Group of galaxies.</Desc>
+        </Star>
+        <Star id="75" level="8" filename="SGE" name="Sagitta">
+            <Desc> Sagitta lies within the Milky Way and is bordered by the following constellations (beginning at the north and then continuing clockwise): the little fox Vulpecula, the mythological hero Hercules, the eagle Aquila and the dolphin Delphinus.</Desc>
+        </Star>
+        <Star id="76" level="8" filename="SGR" name="Sagittarius">
+            <Desc>In Greek mythology, Sagittarius is usually identified as a centaur: half human, half horse. However, perhaps due to the Greek's adoption of the Sumerian constellation, some confusion surrounds the identity of the archer. Some identify Sagittarius as the centaur Chiron, the son of Philyra and Saturn and tutor to Jason, who was said to have changed himself into a horse to escape his jealous wife, Rhea. However, Chiron is in fact represented by the constellation Centaurus, the other heavenly centaur.</Desc>
+        </Star>
+        <Star id="77" level="8" filename="TAU" name="Taurus">
+            <Desc>In Greek mythology, Taurus was identified with Zeus, who assumed the form of a magnificent white bull to abduct Europa, a legendary Phoenician princess. In illustrations of Greek mythology, only the front portion of this constellation are depicted; this was sometimes explained as Taurus being partly submerged as he carried Europa out to sea. A second Greek myth portrays Taurus as Io, a mistress of Zeus. To hide his lover from his wife Hera, Zeus changed Io into the form of a heifer.Greek mythographer Acusilaus marks the bull Taurus as the same that formed the myth of the Cretan Bull, one of The Twelve Labors of Heracles.</Desc>
+        </Star>
+        <Star id="78" level="8" filename="TEL" name="Telescopium">
+            <Desc>Telescopium was introduced in 1751–52 by Nicolas Louis de Lacaille with the French name le Telescope,depicting an aerial telescope, after he had observed and catalogued 10,000 southern stars during a two-year stay at the Cape of Good Hope. </Desc>
+        </Star>
+        <Star id="79" level="8" filename="TRA" name="Triangulum Australe">
+            <Desc>Triangulum Australe is a small constellation in the far southern celestial hemisphere. Its name is Latin for "the southern triangle", which distinguishes it from Triangulum in the northern sky and is derived from the almost equilateral pattern of its three brightest stars.</Desc>
+        </Star>
+        <Star id="80" level="9" filename="TRI" name="Triangulum">
+            <Desc>Later, the 17th-century German celestial cartographer Johann Bayer called the constellation Triplicitas and Orbis terrarum tripertitus, for the three regions Europe, Asia, and Africa. Triangulus Septentrionalis was a name used to distinguish it from Triangulum Australe, the Southern Triangle</Desc>
+        </Star>
+        <Star id="81" level="9" filename="TUC" name="Tucana">
+            <Desc> It was interpreted on Chinese charts as Neaou Chuy "beak bird", and in England as "Brasilian Pye", while Johannes Kepler and Giovanni Battista Riccioli termed it Anser Americanus "American Goose", and Caesius as Pica Indica. Tucana and the nearby constellations Phoenix, Grus and Pavo are collectively called the "Southern Birds"</Desc>
+        </Star>
+        <Star id="82" level="9" filename="UMA" name="Ursa Major">
+            <Desc> The Odyssey notes that it is the sole constellation that never sinks below the horizon and "bathes in the Ocean's waves", so it is used as a celestial reference point for navigation. It is also referred to as the "Wain".</Desc>
+        </Star>
+        <Star id="83" level="9" filename="UMI" name="Ursa Minor">
+            <Desc>Ursa Minor is commonly visualized as a baby bear with an unusually long tail. Ursa Minor and Ursa Major were related by the Greeks to the myth of Callisto and Arcas. However, in a variant of the story, in which it is Boötes that represents Arcas, Ursa Minor represents a dog. This is the older tradition, which sensibly explains both the length of the tail and the obsolete alternate name of Cynosura (the dog's tail) for Polaris, the North Star.</Desc>
+        </Star>
+        <Star id="84" level="9" filename="VEL" name="Vela">
+            <Desc>Argo was more accurately charted and subdivided in 1752 by the French astronomer Nicolas Louis de Lacaille, forming Carina, Vela, Puppis and Pyxis. Despite the division, Lacaille kept Argo's Bayer designations. Therefore Carina has the Alpha, Beta and Epsilon, Vela has Gamma and Delta, and Puppis has Zeta, and so on</Desc>
+        </Star>
+        <Star id="85" level="9" filename="VIR" name="Virgo">
+            <Desc>The Greeks and Romans associated Virgo with their goddess of wheat/agriculture, Demeter-Ceres who is the mother of Persephone-Proserpina. Alternatively, she was sometimes identified as the virgin goddess Iustitia or Astraea, holding the scales of justice in her hand as the constellation Libra. Another myth identifies Virgo as Erigone, the daughter of Icarius of Athens. Icarius, who had been favoured by Dionysus, was killed by his shepherds while they were intoxicated and Erigone hanged herself in grief; Dionysus placed the father and daughter in the stars as Boötes and Virgo respectively. In the Middle Ages, Virgo was sometimes associated with the Blessed Virgin Mary</Desc>
+        </Star>
+        <Star id="86" level="9" filename="VOL" name="Volans">
+            <Desc>Volans is a constellation in the southern sky. It represents a flying fish; its name is a shortened form of its original name, Piscis Volans. Volans was one of twelve constellations created by Petrus Plancius from the observations of Pieter Dirkszoon Keyser and Frederick de Houtman and it first appeared on a 35-cm diameter celestial globe published in 1597 (or 1598) in Amsterdam by Plancius with Jodocus Hondius</Desc>
+        </Star>
+        <Star id="87" level="9" filename="VUL" name="Vulpecula">
+            <Desc>In the late 17th century, the astronomer Johannes Hevelius created Vulpecula. It was originally known as Vulpecula cum ansere ("the little fox with the goose") or Vulpecula et Anser ("the little fox and the goose"), and was illustrated with a goose in the jaws of a fox. Hevelius did not regard the fox and the goose to be two separate constellations, but later the stars were divided into a separate Anser and Vulpecula. Today, they have been merged again under the name of the fox, but the goose is remembered by the name of the star α Vulpeculae: Anser.</Desc>
+        </Star>
+    </Stars>
+</StarCollection>

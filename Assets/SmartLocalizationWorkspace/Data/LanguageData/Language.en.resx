@@ -116,9 +116,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Alien.Pop" xml:space="preserve">
+		<value>Alien is pop. Destory it before summon space storm.</value>
+	</data>
 	<data name="BlackHole" xml:space="preserve">
 		<value>Clicking on the black hole will teleport away
 as much as 10 times the speed of the engine.</value>
+	</data>
+	<data name="Event.Earth" xml:space="preserve">
+		<value>You have reached the Earth. New skill is unlocked.</value>
+	</data>
+	<data name="Event.Hubble" xml:space="preserve">
+		<value>You found Hubble space telescope. Keep clicking it to get coins.</value>
+	</data>
+	<data name="Event.ISS" xml:space="preserve">
+		<value>You found ISS. Keep clicking to get coins.</value>
+	</data>
+	<data name="Event.Jupiter" xml:space="preserve">
+		<value>You have reached the Jupiter. New skill is unlocked</value>
+	</data>
+	<data name="Event.Mars" xml:space="preserve">
+		<value>You have reached the Mars. New skill is unlocked.</value>
+	</data>
+	<data name="Event.Moon" xml:space="preserve">
+		<value>You have reached the Moon. New skill is unlocked and Time is going to be 10 times faster</value>
+	</data>
+	<data name="Event.Neptune" xml:space="preserve">
+		<value>You have reached the Neptune</value>
+	</data>
+	<data name="Event.Saturn" xml:space="preserve">
+		<value>You have reached the Saturn</value>
+	</data>
+	<data name="Event.Uranus" xml:space="preserve">
+		<value>You have reached the Uranus</value>
 	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Constellation</value>
@@ -138,6 +168,21 @@ as much as 10 times the speed of the engine.</value>
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>Upgrade</value>
 	</data>
+	<data name="Star.Common" xml:space="preserve">
+		<value>[Common]</value>
+	</data>
+	<data name="Star.Discoverd" xml:space="preserve">
+		<value>You've got constellation</value>
+	</data>
+	<data name="Star.Hero" xml:space="preserve">
+		<value>[Hero]</value>
+	</data>
+	<data name="Star.Legend" xml:space="preserve">
+		<value>[Legend]</value>
+	</data>
+	<data name="Star.Pop" xml:space="preserve">
+		<value>Constellation is Pop up, Kepp cliking to get star you can upgrade weapon by stars.</value>
+	</data>
 	<data name="Store.Product1Result" xml:space="preserve">
 		<value>You are VIP now. you will get 2 times golds from now</value>
 	</data>
@@ -156,6 +201,15 @@ as much as 10 times the speed of the engine.</value>
 	<data name="Store.Result4" xml:space="preserve">
 		<value>I really really appreciate your purchase. 
 I am going to make better game at next time.</value>
+	</data>
+	<data name="Tutorial.1" xml:space="preserve">
+		<value>Time to start journey for human being's future.</value>
+	</data>
+	<data name="Tutorial.2" xml:space="preserve">
+		<value>Be careful asteroid. You can distroy by shot skill or shield skill</value>
+	</data>
+	<data name="Tutorial.3" xml:space="preserve">
+		<value>If you got fire, You can use extinguisher on right bottlm (red icon)</value>
 	</data>
 	<data name="UI.Accel" xml:space="preserve">
 		<value>times Accel</value>
@@ -309,5 +363,8 @@ Every calculation will be faster than normal time</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Yes</value>
+	</data>
+	<data name="Whale.Pop" xml:space="preserve">
+		<value>Space Whale is pop. Keep cliking to get coins.</value>
 	</data>
 </root>

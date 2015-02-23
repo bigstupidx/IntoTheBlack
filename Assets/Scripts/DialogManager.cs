@@ -119,7 +119,18 @@ public class DialogManager : MonoBehaviour
 			thisLanguageManager.ChangeLanguage("en");
 		}
 
-		dialogAsset = Resources.Load("dialogCollection") as TextAsset;
+		if(cultureInfo.englishName == "Korean")
+		{
+			dialogAsset = Resources.Load("dialogCollection") as TextAsset;
+			goalAsset = Resources.Load("goalCollection") as TextAsset;
+			colonyAsset = Resources.Load("colonyCollection") as TextAsset;
+		}
+		else
+		{
+			dialogAsset = Resources.Load("dialogCollection_en") as TextAsset;
+			goalAsset = Resources.Load("goalCollection_en") as TextAsset;
+			colonyAsset = Resources.Load("colonyCollection_en") as TextAsset;
+		}
 
 		XmlSerializer serializer = new XmlSerializer(typeof(DialogContainer));
 		StringReader stringReader = new StringReader(dialogAsset.text);
@@ -139,7 +150,7 @@ public class DialogManager : MonoBehaviour
 		}
 
 
-		goalAsset = Resources.Load("goalCollection") as TextAsset;
+		// goalAsset = Resources.Load("goalCollection") as TextAsset;
 		
 		serializer = new XmlSerializer(typeof(GoalContainer));
 		stringReader = new StringReader(goalAsset.text);
@@ -158,7 +169,7 @@ public class DialogManager : MonoBehaviour
 			m_Goals[i].rewardText = g_container.Goals[i].RewardText;
 		}
 	
-		colonyAsset = Resources.Load("colonyCollection") as TextAsset;
+		//colonyAsset = Resources.Load("colonyCollection") as TextAsset;
 
 		serializer = new XmlSerializer(typeof(DialogContainer));
 		stringReader = new StringReader(colonyAsset.text);

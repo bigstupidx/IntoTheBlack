@@ -71,8 +71,8 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: d6d69ffc6806d40debf72cf5a516c536
-  iPhoneBundleVersion: 1.0.5
-  AndroidBundleVersionCode: 105
+  iPhoneBundleVersion: 1.0.6
+  AndroidBundleVersionCode: 106
   AndroidMinSdkVersion: 13
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -113,17 +113,17 @@ PlayerSettings:
       m_Size: 128
   - m_BuildTarget: Android
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 8c0f6a4d3eadd44bfae2c7643cb89de7, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 839b801738d484f759e450a8324a2953, type: 3}
       m_Size: 192
-    - m_Icon: {fileID: 2800000, guid: 7f2e2d3779bd4498e91aceae64668a70, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 32e935b4c1e02464591b096e23212bd9, type: 3}
       m_Size: 144
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 32e935b4c1e02464591b096e23212bd9, type: 3}
       m_Size: 96
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 32e935b4c1e02464591b096e23212bd9, type: 3}
       m_Size: 72
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 32e935b4c1e02464591b096e23212bd9, type: 3}
       m_Size: 48
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 32e935b4c1e02464591b096e23212bd9, type: 3}
       m_Size: 36
   - m_BuildTarget: iPhone
     m_Icons:

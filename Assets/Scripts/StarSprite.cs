@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 using PathologicalGames;
+using SmartLocalization;
+
 
 public class StarSprite : MonoBehaviour
 {
@@ -119,26 +121,27 @@ public class StarSprite : MonoBehaviour
 					{
 						
 						//StarLoader script = starLoader.GetComponent<StarLoader>();
-						
+						LanguageManager thisLanguageManager = LanguageManager.Instance;
+
 						string typeString;
 						if (type == 1)
 						{
-							typeString ="[일반] ";
+							typeString = thisLanguageManager.GetTextValue("Star.Common");
 							StarLoader.Instance.UpdateAlbum(id,1);
 
 						}
 						else if (type == 2)
 						{
-							typeString ="[영웅] ";
+							typeString =thisLanguageManager.GetTextValue("Star.Hero");
 							StarLoader.Instance.UpdateAlbum(id,2);
 						}
 						else
 						{
-							typeString ="[전설] ";
+							typeString =thisLanguageManager.GetTextValue("Star.Legend");
 							StarLoader.Instance.UpdateAlbum(id,3);
 						}
 
-						string notice = string.Concat("[ ", level, " 레벨] ", typeString, starName, " 발견 하였습니다.");
+						string notice = string.Concat(thisLanguageManager.GetTextValue("Star.Discoverd"), typeString, " ",  level ," Level ",starName);
 
 						NoticeManager.Instance.SetNotice(notice, 5f);
 

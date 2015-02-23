@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SmartLocalization;
 
 public class Tutorial : MonoBehaviour
 {
@@ -21,10 +22,12 @@ public class Tutorial : MonoBehaviour
 
 	IEnumerator  TutorialPop()
 	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+
 		string[] tr = new string[] {
-			"인류의 미래를 건 여행이 시작 되었네요!!!\n 탐사선을 향상 시켜 더 멀리 나아 가요.\n 날아오는 운석을 조심하세요.", 
-			"외계 기술이라도 얻지 않는한 저 운석들을 어쩔수가 없는건가? ",
-			"우주에는 우리 말고도 다른 생명체가 존재할 확률이 아주 높죠. 진실성 85% "};
+			thisLanguageManager.GetTextValue("Tutorial.1"), 
+			thisLanguageManager.GetTextValue("Tutorial.2"),
+			thisLanguageManager.GetTextValue("Tutorial.3")};
 
 //		EventDialog dialogScript = dialogWindow.GetComponent<EventDialog>();
 

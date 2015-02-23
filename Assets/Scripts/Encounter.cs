@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using PathologicalGames;
+using SmartLocalization;
 
 public class Encounter : MonoBehaviour 
 {
@@ -46,6 +47,7 @@ public class Encounter : MonoBehaviour
 
 	IEnumerator EncounterLoop()
 	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
 		if (EventManager.previousGoal > 1)
 		{
@@ -59,7 +61,7 @@ public class Encounter : MonoBehaviour
 		yield return new WaitForSeconds(startWaitTime);
 
 		SpawnStar();
-		NoticeManager.Instance.SetNotice("별자리가 나타났습니다. 마구 클릭하여 별을 모아 보세요. \n 별을 모아 무기를 업그레이드 할 수 있습니다.",5f);
+		NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Star.Pop"),5f);
 
 		yield return new WaitForSeconds(23f);
 		
@@ -72,13 +74,13 @@ public class Encounter : MonoBehaviour
 			}
 			else if (Random.Range (0,3) > 1 ) 
 			{
-				NoticeManager.Instance.SetNotice("우주 고래가 나타났습니다. 터치해서 자원을 모으세요.\n", 5);
+				NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Whale.Pop"), 5);
 				SpawnWhale();
 				spawnWaitTime = 15f;
 			}
 			else
 			{
-				NoticeManager.Instance.SetNotice("외계인이 나타났습니다. 우주 폭풍을 부르기전에 물리치세요.\n", 5);
+				NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Alien.Pop"), 5);
 				SpawnAlien();
 				spawnWaitTime = 30f;
 			}

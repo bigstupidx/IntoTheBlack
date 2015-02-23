@@ -212,6 +212,7 @@ public class EventManager : MonoBehaviour
 
 	public void IngameReward(int _id)
 	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
 
 		switch(_id)
 		{
@@ -230,7 +231,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("earth", 1);
 
 			SoundManager.Instance.PlaySound(9);
-			NoticeManager.Instance.SetNotice("You have got Earth. New skill is unlocked.\n Touch Earth skill then you can get golds near space ship",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Earth"),5f);
 
 			Instantiate(planets[0]);
 
@@ -256,7 +257,7 @@ public class EventManager : MonoBehaviour
 //			UpgradeManager.unlockEngine = 20;
 //			PlayerPrefs.SetInt("unlockEngine",UpgradeManager.unlockEngine);	
 //			
-			NoticeManager.Instance.SetNotice("You discovered ISS, Keep touching it to get golds",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.ISS"),5f);
 			break;
 
 			// Huble
@@ -278,7 +279,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("unlockTime",UpgradeManager.unlockTime);	
 
 			GameController.timeLevel = 5;
-			NoticeManager.Instance.SetNotice("you discoverd hubble telescope, start to accel 5 times ",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Hubble"),5f);
 			GameController.Instance.SavePlayerData();
 			SpawnManager.Instance.CaculateSpawnProb();
 			break;
@@ -301,7 +302,7 @@ public class EventManager : MonoBehaviour
 			PlayerController.Instance.UpdateWing();
 
 			GameController.timeLevel +=5;
-			NoticeManager.Instance.SetNotice("You have got the Moon. 10 times faster than normal time speed \n You can upgrade time accelation from now. ",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Moon"),5f);
 			UpgradeManager.unlockTime = 301;
 			PlayerPrefs.SetInt("unlockTime",UpgradeManager.unlockTime);
 
@@ -335,7 +336,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("Mars", 1);
 			PlayerController.Instance.UpdateWing();
 
-			NoticeManager.Instance.SetNotice("You have got Mars. New skill is unlocked",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Mars"),5f);
 //			UpgradeManager.unlockEngine = 101;
 //			PlayerPrefs.SetInt("unlockEngine",UpgradeManager.unlockEngine);
 			Instantiate(planets[6]);
@@ -371,7 +372,7 @@ public class EventManager : MonoBehaviour
 			SoundManager.Instance.PlaySound(9);
 			GameController.wingJupiter = 1;
 			PlayerPrefs.SetInt("jupiter", 1);
-			NoticeManager.Instance.SetNotice("You have got Jupiter",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Jupiter"),5f);
 			PlayerController.Instance.UpdateWing();
 			Instantiate(planets[11]);
 
@@ -414,7 +415,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("saturn", 1);
 			PlayerController.Instance.UpdateWing();
 
-			NoticeManager.Instance.SetNotice("You have got Saturn",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Saturn"),5f);
 			Instantiate(planets[19]);
 
 			break;
@@ -454,7 +455,7 @@ public class EventManager : MonoBehaviour
 			PlayerPrefs.SetInt("uranus", 1);
 			PlayerController.Instance.UpdateWing();
 			
-			NoticeManager.Instance.SetNotice("You have got Uranus",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Uranus"),5f);
 			Instantiate(planets[26]);
 
 			break;
@@ -480,7 +481,7 @@ public class EventManager : MonoBehaviour
 			GameController.wingNeptune = 1;
 			PlayerPrefs.SetInt("neptune", 1);
 			PlayerController.Instance.UpdateWing();
-			NoticeManager.Instance.SetNotice("You have got Neptune",5f);
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Event.Neptune"),5f);
 			Instantiate(planets[29]);
 
 			break;

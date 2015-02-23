@@ -116,8 +116,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Alien.Pop" xml:space="preserve">
+		<value>Étranger est pop. Destory il convoquer avant tempête de l'espace.</value>
+	</data>
 	<data name="BlackHole" xml:space="preserve">
 		<value>En cliquant sur le téléport de volonté de trou noir de suite autant que 10 fois la vitesse du moteur.</value>
+	</data>
+	<data name="Event.Earth" xml:space="preserve">
+		<value>Vous avez atteint la terre. Nouvelle compétence est déverrouillé.</value>
+	</data>
+	<data name="Event.Hubble" xml:space="preserve">
+		<value>Vous avez trouvé le télescope spatial Hubble. Garder en cliquant dessus pour obtenir des pièces.</value>
+	</data>
+	<data name="Event.ISS" xml:space="preserve">
+		<value>Vous avez trouvé l'ISS. Garder en cliquant sur pour obtenir des pièces de monnaie.</value>
+	</data>
+	<data name="Event.Jupiter" xml:space="preserve">
+		<value>Vous avez atteint le Jupiter. Nouvelle compétence est déverrouillé</value>
+	</data>
+	<data name="Event.Mars" xml:space="preserve">
+		<value>Vous avez atteint le Mars. Nouvelle compétence est déverrouillé.</value>
+	</data>
+	<data name="Event.Moon" xml:space="preserve">
+		<value>Vous avez atteint la lune. Nouvelle compétence est déverrouillé et le temps va être 10 fois plus rapide</value>
+	</data>
+	<data name="Event.Neptune" xml:space="preserve">
+		<value>Vous avez atteint le Neptune</value>
+	</data>
+	<data name="Event.Saturn" xml:space="preserve">
+		<value>Vous avez atteint la Saturn</value>
+	</data>
+	<data name="Event.Uranus" xml:space="preserve">
+		<value>Vous avez atteint l'Uranus</value>
 	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Constellation</value>
@@ -137,6 +167,21 @@
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>Mise à niveau</value>
 	</data>
+	<data name="Star.Common" xml:space="preserve">
+		<value>[Commune]</value>
+	</data>
+	<data name="Star.Discoverd" xml:space="preserve">
+		<value>Vous avez un constellation</value>
+	</data>
+	<data name="Star.Hero" xml:space="preserve">
+		<value>[Héros]</value>
+	</data>
+	<data name="Star.Legend" xml:space="preserve">
+		<value>[Légende]</value>
+	</data>
+	<data name="Star.Pop" xml:space="preserve">
+		<value>Constellation est Pop up, Kepp cliquant pour obtenir étoiles vous pouvez mettre à niveau arme par étoiles.</value>
+	</data>
 	<data name="Store.Product1Result" xml:space="preserve">
 		<value>Vous êtes VIP. vous obtiendrez 2 fois médailles d'or dès maintenant</value>
 	</data>
@@ -155,6 +200,15 @@
 	<data name="Store.Result4" xml:space="preserve">
 		<value>J'apprécie vraiment votre achat. 
 Je vais faire le meilleur jeu à la prochaine fois.</value>
+	</data>
+	<data name="Tutorial.1" xml:space="preserve">
+		<value>Temps de commencer le voyage pour l'avenir de l'être humain.</value>
+	</data>
+	<data name="Tutorial.2" xml:space="preserve">
+		<value>Être prudent astéroïde. Vous pouvez détruire par skill shot ou compétence bouclier</value>
+	</data>
+	<data name="Tutorial.3" xml:space="preserve">
+		<value>Si tu as le feu, vous pouvez utiliser l'extincteur sur bottlm droite (icône rouge)</value>
 	</data>
 	<data name="UI.Accel" xml:space="preserve">
 		<value>temps d'Accel</value>
@@ -306,5 +360,8 @@ Merci pour votre achat.</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Oui</value>
+	</data>
+	<data name="Whale.Pop" xml:space="preserve">
+		<value>Espace baleine est pop. Garder cliquant pour obtenir des pièces de monnaie.</value>
 	</data>
 </root>

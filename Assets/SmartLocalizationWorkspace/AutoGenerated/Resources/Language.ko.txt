@@ -116,8 +116,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Alien.Pop" xml:space="preserve">
+		<value>외계인이 나타났습니다. 우주폭풍을 부르기전에 물리치면 블랙홀로 텔레포트 할 수 있습니다.</value>
+	</data>
 	<data name="BlackHole" xml:space="preserve">
 		<value>블랙홀을 클릭하면 엔진 속도의 10 배 거리만큼 텔레포트 합니다.</value>
+	</data>
+	<data name="Event.Earth" xml:space="preserve">
+		<value>지구에 도달 했습니다. 새로운 기술이 잠금 해제 됩니다.</value>
+	</data>
+	<data name="Event.Hubble" xml:space="preserve">
+		<value>당신은 허블 우주 망원경을 발견했습니다. 계속 클릭해서 동전을 획득하세요.</value>
+	</data>
+	<data name="Event.ISS" xml:space="preserve">
+		<value>국제 우주 정거장을 발견했습니다. 계속 클릭해서 동전을 획득하세요.</value>
+	</data>
+	<data name="Event.Jupiter" xml:space="preserve">
+		<value>목성에 도달 했습니다. 새로운 기술을 사용할 수 있습니다. </value>
+	</data>
+	<data name="Event.Mars" xml:space="preserve">
+		<value>화성에 도달 했습니다. 새로운 기술을 사용할 수 있습니다.</value>
+	</data>
+	<data name="Event.Moon" xml:space="preserve">
+		<value>달에 도달 했습니다. 새로운 기술이 잠금 해제되고, 시간이 10 배 더 빠르게 진행 됩니다.</value>
+	</data>
+	<data name="Event.Neptune" xml:space="preserve">
+		<value>해왕성에 도달 했습니다.</value>
+	</data>
+	<data name="Event.Saturn" xml:space="preserve">
+		<value>토성에 도달 했습니다.</value>
+	</data>
+	<data name="Event.Uranus" xml:space="preserve">
+		<value>천왕성에 도달 했습니다.</value>
 	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>별자리앨범</value>
@@ -136,6 +166,21 @@
 	</data>
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>업그레이드</value>
+	</data>
+	<data name="Star.Common" xml:space="preserve">
+		<value>[일반]</value>
+	</data>
+	<data name="Star.Discoverd" xml:space="preserve">
+		<value>별자리를 발견했습니다.</value>
+	</data>
+	<data name="Star.Hero" xml:space="preserve">
+		<value>[영웅]</value>
+	</data>
+	<data name="Star.Legend" xml:space="preserve">
+		<value>[전설]</value>
+	</data>
+	<data name="Star.Pop" xml:space="preserve">
+		<value>별자리가 나타났습니다. 별을 획득할때까지 클릭하세요. 별로 무기를 업그레이드 할 수 있습니다.</value>
 	</data>
 	<data name="Store.Product1Result" xml:space="preserve">
 		<value>당신은 제 마음속에 영원한 VIP 입니다.
@@ -156,6 +201,15 @@
 	<data name="Store.Result4" xml:space="preserve">
 		<value>구입해 주셔서 감사합니다. 
 다음 번에 더 나은 게임을 만들겟습니다.</value>
+	</data>
+	<data name="Tutorial.1" xml:space="preserve">
+		<value>인류의 미래를 건 여행이 시작되었습니다.</value>
+	</data>
+	<data name="Tutorial.2" xml:space="preserve">
+		<value>날아오는 운석을 조심하세요. 공격 기술이나 보호막 기술로 파괴할 수 있습니다.</value>
+	</data>
+	<data name="Tutorial.3" xml:space="preserve">
+		<value>화재가 발생하면 오른쪽 하단에 있는 소화기 기술을 사용하세요.</value>
 	</data>
 	<data name="UI.Accel" xml:space="preserve">
 		<value>배 가속</value>
@@ -213,7 +267,7 @@
 		<value>여행 시간</value>
 	</data>
 	<data name="UI.Keepgoing" xml:space="preserve">
-		<value>게임이 실행중이지 않을때에도 당신의 우주선은 계속 여행을 합니다.</value>
+		<value>게임이 실행중이지 않을때에도 우주선은 계속 여행을 합니다.</value>
 	</data>
 	<data name="UI.Legend" xml:space="preserve">
 		<value>전설</value>
@@ -259,7 +313,7 @@
 		<value>우주에서라도 부자 되기 (25만 골드) - 9000원</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
-		<value>Google 리더보드 확인</value>
+		<value>게임을 종료 하시겠습니까?</value>
 	</data>
 	<data name="UI.Restart" xml:space="preserve">
 		<value>처음부터 다시 시작</value>
@@ -308,5 +362,8 @@
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>예</value>
+	</data>
+	<data name="Whale.Pop" xml:space="preserve">
+		<value>우주 고래가 나타났습니다. 계속 클릭해서 동전을 모으세요.</value>
 	</data>
 </root>

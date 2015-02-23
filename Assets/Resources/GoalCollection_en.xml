@@ -1,0 +1,100 @@
+<GoalCollection>
+    <Goals>
+        <Goal id="0" name="Earth" distance="0" reward="30">
+            <RewardText> The Blue Marble photograph of Earth, taken during the Apollo 17 lunar mission. Earth, also called the world and, less frequently, Gaia,(or Terra in some works of science fiction) is the third planet from the Sun, the densest planet in the Solar System, the largest of the Solar System's four terrestrial planets and the only astronomical object known to accommodate life</RewardText>
+        </Goal>
+        <Goal id="1" name="International Space Station" distance="350" reward="50">
+            <RewardText>The International Space Station (ISS) is a space station, or a habitable artificial satellite, in low Earth orbit. It is a modular structure whose first component was launched in 1998. Now the largest artificial body in orbit, it can often be seen with the naked eye from Earth.</RewardText>
+        </Goal>
+        <Goal id="2" name="Hubble Space Telescope" distance="559" reward="100">
+            <RewardText>The Hubble Space Telescope (HST) is a space telescope that was launched into low Earth orbit in 1990, and remains in operation. With a 2.4-meter (7.9 ft) mirror, Hubble's four main instruments observe in the near ultraviolet, visible, and near infrared spectra. The telescope is named after the astronomer Edwin Hubble.</RewardText>
+        </Goal>
+        <Goal id="3" name="Moon" distance="380000" reward="10000">
+            <RewardText>The Moon (Latin: Luna) is Earth's only natural satellite. Although not the largest natural satellite in the Solar System, among the satellites of major planets it is the largest relative to the size of the object it orbits (its primary).It is the second-densest satellite among those whose densities are known (after Jupiter's satellite Io).</RewardText>
+        </Goal>
+        <Goal id="4" name="Deimos (moon)" distance="78310000" reward="50000">
+            <RewardText>Deimos (systematic designation: Mars II) is the smaller and outermore of the two natural satellites of the planet Mars with a mean radius of 6.2 km, the other being Phobos. Deimos takes 30.3 hours to orbit Mars. The name "Deimos" is pronounced /ˈdaɪməs/ dy-məs, or sometimes /ˈdiːməs/ dee-məs or like the Greek Δείμος. In Greek mythology, Deimos was the twin brother of Phobos and personified Terror.</RewardText>
+        </Goal>
+        <Goal id="5" name="Phobos (moon)" distance="78330000" reward="50000">
+            <RewardText> A small, irregularly shaped object with a mean radius of 11 km, Phobos is seven times more massive than Mars's outer moon, Deimos. Phobos is named after the Greek god Phobos, a son of Ares (Mars) and Aphrodite (Venus) which was the personification of Horror. The name "Phobos" is pronounced /ˈfoʊbəs/ foh-bəs, or like the Greek Φόβος.</RewardText>
+        </Goal>
+        <Goal id="6" name="Mars" distance="78340000" reward="100000">
+            <RewardText>Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often described as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance.</RewardText>
+        </Goal>
+        <Goal id="7" name="Callisto (moon)" distance="626120000" reward="50000">
+            <RewardText>Callisto /kəˈlɪstoʊ/ (Jupiter IV) is a moon of the planet Jupiter. It was discovered in 1610 by Galileo Galilei. It is the third-largest moon in the Solar System and the second largest in the Jovian system, after Ganymede, and the largest object in the Solar System not to be properly differentiated.</RewardText>
+        </Goal>
+        <Goal id="8" name="Ganymede (moon)" distance="626930000" reward="50000">
+            <RewardText>Ganymede /ˈɡænɨmiːd/ (Jupiter III) is the largest moon of Jupiter and in the Solar System, and the only moon known to have a magnetosphere. It is the seventh moon and third Galilean satellite outward from Jupiter.</RewardText>
+        </Goal>
+        <Goal id="9" name="Europa (moon)" distance="627330000" reward="50000">
+            <RewardText>Europa Listeni/jʊˈroʊpə/(Jupiter II), is the sixth-closest moon of the planet Jupiter, and the smallest of its four Galilean satellites, but still the sixth-largest moon in the Solar System. Europa was discovered in 1610 by Galileo Galilei. Progressively better observations of Europa have occurred over the centuries by Earth-bound telescopes, and by space probe flybys starting in the 1970s.</RewardText>
+        </Goal>
+        <Goal id="10" name="Io (moon)" distance="627650000" reward="50000">
+            <RewardText>Io /ˈaɪ.oʊ/ is the innermost of the four Galilean moons of the planet Jupiter. It is the fourth-largest moon, has the highest density of all the moons, and is the driest known object in the Solar System. It was named after the mythological character Io, a priestess of Hera who became one of Zeus's lovers.</RewardText>
+        </Goal>
+        <Goal id="11" name="Jupiter" distance="628000000" reward="200000">
+            <RewardText>Jupiter is the fifth planet from the Sun and the largest planet in the Solar System. It is a giant planet with a mass one-thousandth of that of the Sun, but is two and a half times that of all the other planets in the Solar System combined. Jupiter is a gas giant, along with Saturn (Uranus and Neptune are ice giants). Jupiter was known to astronomers of ancient times.</RewardText>
+        </Goal>
+        <Goal id="12" name="Iapetus (moon)" distance="1276440000" reward="50000">
+            <RewardText>Iapetus (/aɪˈæpɨtəs/; Greek: Ιαπετός), or occasionally Japetus /ˈdʒæpɨtəs/ is the third-largest natural satellite of Saturn, eleventh-largest in the Solar System, and the largest body in the Solar System known not to be in hydrostatic equilibrium </RewardText>
+        </Goal>
+        <Goal id="13" name="Titan (moon)" distance="1278780000" reward="50000">
+            <RewardText>Titan (or Saturn VI) is the largest moon of Saturn. It is the only natural satellite known to have a dense atmosphere, and the only object other than Earth where clear evidence of stable bodies of surface liquid has been found.</RewardText>
+        </Goal>
+        <Goal id="14" name="Rhea (moon)" distance="1279472900" reward="50000">
+            <RewardText>Rhea (/ˈriːə/;[b] Ancient Greek: Ῥέᾱ) is the second-largest moon of Saturn and the ninth-largest moon in the Solar System. It is the smallest body in the Solar System confirmed to be in hydrostatic equilibrium.[clarification needed]It was discovered in 1672 by Giovanni Domenico Cassini.</RewardText>
+        </Goal>
+        <Goal id="15" name="Dione (moon)" distance="1279623000" reward="50000">
+            <RewardText>Dione (/daɪˈoʊni/;[7] Greek: Διώνη) is a moon of Saturn discovered by Italian astronomer Giovanni Domenico Cassini in 1684. It is named after the Titaness Dione of Greek mythology. It is also designated Saturn IV.</RewardText>
+        </Goal>
+        <Goal id="16" name="Tethys (moon)" distance="1279706000" reward="50000">
+            <RewardText>Tethys or Saturn III is a mid-sized moon of Saturn about 1,060 km (660 mi) across. It was discovered by G. D. Cassini in 1684 and is named after the titan Tethys of Greek mythology. </RewardText>
+        </Goal>
+        <Goal id="17" name="Enceladus" distance="1279762050" reward="50000">
+            <RewardText> Enceladus is the sixth-largest moon of Saturn. It was discovered in 1789 by William Herschel,[1][13][14] but little was known about Enceladus until the two Voyager spacecraft passed near it in the early 1980s.</RewardText>
+        </Goal>
+        <Goal id="18" name="Mimas (moon)" distance="1279815000" reward="50000">
+            <RewardText>Mimas is a moon of Saturn which was discovered in 1789 by William Herschel. It is named after Mimas, a son of Gaia in Greek mythology, and is also designated Saturn I.</RewardText>
+        </Goal>
+        <Goal id="19" name="Saturn" distance="1280000000" reward="300000">
+            <RewardText>Saturn is the sixth planet from the Sun and the second largest planet in the Solar System, after Jupiter. Named after the Roman god of agriculture, its astronomical symbol (♄) represents the god's sickle. Saturn is a gas giant with an average radius about nine times that of Earth. Although only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive.</RewardText>
+        </Goal>
+        <Goal id="20" name="Oberon (moon)" distance="2719416500" reward="50000">
+            <RewardText>Oberon, also designated Uranus IV, is the outermost major moon of the planet Uranus. It is the second-largest and second most massive of the Uranian moons, and the ninth most massive moon in the Solar System. Discovered by William Herschel in 1787</RewardText>
+        </Goal>
+        <Goal id="21" name="Titania (moon)" distance="2719564100" reward="50000">
+            <RewardText> Titania is the largest of the moons of Uranus and the eighth largest moon in the Solar System at a diameter of 1,578 kilometres (981 mi). Discovered by William Herschel in 1787.</RewardText>
+        </Goal>
+        <Goal id="22" name="Umbriel (moon)" distance="2719734000" reward="50000">
+            <RewardText>Umbriel is a moon of Uranus discovered on October 24, 1851, by William Lassell. It was discovered at the same time as Ariel and named after a character in Alexander Pope's poem The Rape of the Lock. Umbriel consists mainly of ice with a substantial fraction of rock, and may be differentiated into a rocky core and an icy mantle.</RewardText>
+        </Goal>
+        <Goal id="23" name="Ariel (moon)" distance="2719809000" reward="50000">
+            <RewardText>Ariel is the fourth-largest of the 27 known moons of Uranus. Ariel orbits and rotates in the equatorial plane of Uranus, which is almost perpendicular to the orbit of Uranus, and so has an extreme seasonal cycle.</RewardText>
+        </Goal>
+        <Goal id="24" name="Miranda (moon)" distance="2719870610" reward="50000">
+            <RewardText>Miranda or Uranus V is the smallest and innermost of Uranus's five round satellites. Like the 27 other moons of Uranus, Miranda orbits in its planet's equatorial plane. Because Uranus orbits the Sun on its side, Miranda's orbit is perpendicular to the ecliptic and shares Uranus's extreme seasonal cycle.</RewardText>
+        </Goal>
+        <Goal id="25" name="Puck (moon)" distance="2719914000" reward="50000">
+            <RewardText>Puck (/ˈpʌk/ puk) is an inner moon of Uranus. It was discovered in December 1985 by the Voyager 2 spacecraft. The name Puck follows the convention of naming Uranus's moons after characters from Shakespeare.</RewardText>
+        </Goal>
+        <Goal id="26" name="Uranus" distance="2720000000" reward="300000">
+            <RewardText>Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both are of different chemical composition to the larger gas giants Jupiter and Saturn.</RewardText>
+        </Goal>
+        <Goal id="27" name="Naiad" distance="4344499600" reward="50000">
+            <RewardText>Naiad (/ˈneɪ.əd/ nay-əd or /ˈnaɪ.əd/ ny-əd; Greek: Ναϊάδ-ες), also known as Neptune III, is the innermost satellite of Neptune, named after the Naiads of Greek legend.</RewardText>
+        </Goal>
+        <Goal id="28" name="Triton (moon)" distance="4349645200" reward="50000">
+            <RewardText>Triton is the largest moon of the planet Neptune, discovered on October 10, 1846, by English astronomer William Lassell. It is the only large moon in the Solar System with a retrograde orbit, which is an orbit in the opposite direction to its planet's rotation.</RewardText>
+        </Goal>
+        <Goal id="29" name="Neptune" distance="4350000000" reward="300000">
+            <RewardText>Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Among the gaseous planets in the Solar System, Neptune is the most dense. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth, and not as dense as Neptune.</RewardText>
+        </Goal>
+        <Goal id="30" name="Pluto" distance="5750000000" reward="300000">
+            <RewardText>Pluto (134340 Pluto) is the largest object in the Kuiper belt,[i][j] the tenth-most-massive known body directly orbiting the Sun, and the second-most-massive known dwarf planet, after Eris. Like other Kuiper belt objects, Pluto is primarily made of rock and ice,</RewardText>
+        </Goal>
+        <Goal id="31" name="Heliosphere" distance="10000000000" reward="0">
+            <RewardText>The heliosphere is the region of space dominated by the Sun. The edge of the heliosphere is a magnetic bubble-like medium and is located far beyond the orbit of Pluto</RewardText>
+        </Goal>
+    </Goals>
+</GoalCollection>
