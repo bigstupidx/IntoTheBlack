@@ -6,6 +6,255 @@ using SmartLocalization;
 
 public class Store : MonoBehaviour 
 {
+
+#if UNITY_IPHONE
+	// Use this for initialization
+	private bool isConnect;
+
+	public GameObject resultWindow;
+
+	public Text welcome;
+	public Text product1;
+	public Text product1desc;
+	public Text product2;
+	public Text product2desc;
+	public Text product3;
+	public Text product4;
+	public Text product5;
+	public Text product6;
+	public Text storeThanks;
+
+	private List<StoreKitProduct> _products;
+
+	void Start()
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+
+		welcome.text = thisLanguageManager.GetTextValue("UI.StoreTitle");
+		product1.text = thisLanguageManager.GetTextValue("UI.Product1");
+		product1desc.text = thisLanguageManager.GetTextValue("UI.Product1Desc");
+		product2.text = thisLanguageManager.GetTextValue("UI.Product2");
+		product2desc.text = thisLanguageManager.GetTextValue("UI.Product2Desc");
+		product3.text = thisLanguageManager.GetTextValue("UI.Product3");
+		product4.text = thisLanguageManager.GetTextValue("UI.Product4");
+		product5.text = thisLanguageManager.GetTextValue("UI.Product5");
+		product6.text = thisLanguageManager.GetTextValue("UI.Product6");
+		storeThanks.text = thisLanguageManager.GetTextValue("UI.StoreThanks");
+
+
+		StoreKitManager.productListReceivedEvent += allProducts =>
+		{
+			Debug.Log( "received total products: " + allProducts.Count );
+			_products = allProducts;
+		};
+
+		bool canMakePayments = StoreKitBinding.canMakePayments();
+		Debug.Log( "StoreKit canMakePayments: " + canMakePayments );
+
+		// array of product ID's from iTunesConnect. MUST match exactly what you have there!
+		var productIdentifiers = new string[] { "coin1", "coin3", "coin4", "coin2", "VIP", "wingman" };
+		StoreKitBinding.requestProductData( productIdentifiers );
+
+
+	
+
+		
+//		if( GUILayout.Button( "Restore Completed Transactions" ) )
+//		{
+//			StoreKitBinding.restoreCompletedTransactions();
+//		}
+		
+		
+//		if( GUILayout.Button( "Enable High Detail Logs" ) )
+//		{
+//			StoreKitBinding.enableHighDetailLogs( true );
+//		}
+
+
+	}
+
+
+
+	public void PurchaseReal(string productname)
+	{
+		SoundManager.Instance.PlaySound(8);
+
+
+		switch (productname) {
+		case "one.coin":
+			StoreKitBinding.purchaseProduct ("coin1", 1);
+			break;
+		case "three.coin":
+			StoreKitBinding.purchaseProduct ("coin2", 1);
+			break;
+		case "five.coin":
+			StoreKitBinding.purchaseProduct ("coin3", 1);
+			break;
+		case "nine.coin":
+			StoreKitBinding.purchaseProduct ("coin4", 1);
+			break;
+		case "intotheblack.vip":
+			StoreKitBinding.purchaseProduct ("VIP", 1);
+			break;
+		case "intotheblack.venus":
+			StoreKitBinding.purchaseProduct ("wingman", 1);
+			break;
+		default:
+			break;
+		}
+	}
+
+	void OnEnable()
+	{
+		// Listens to all the StoreKit events. All event listeners MUST be removed before this object is disposed!
+		StoreKitManager.transactionUpdatedEvent += transactionUpdatedEvent;
+		StoreKitManager.productPurchaseAwaitingConfirmationEvent += productPurchaseAwaitingConfirmationEvent;
+		StoreKitManager.purchaseSuccessfulEvent += purchaseSuccessfulEvent;
+		StoreKitManager.purchaseCancelledEvent += purchaseCancelledEvent;
+		StoreKitManager.purchaseFailedEvent += purchaseFailedEvent;
+		StoreKitManager.productListReceivedEvent += productListReceivedEvent;
+		StoreKitManager.productListRequestFailedEvent += productListRequestFailedEvent;
+		StoreKitManager.restoreTransactionsFailedEvent += restoreTransactionsFailedEvent;
+		StoreKitManager.restoreTransactionsFinishedEvent += restoreTransactionsFinishedEvent;
+		StoreKitManager.paymentQueueUpdatedDownloadsEvent += paymentQueueUpdatedDownloadsEvent;
+	}
+	
+	
+	void OnDisable()
+	{
+		// Remove all the event handlers
+		StoreKitManager.transactionUpdatedEvent -= transactionUpdatedEvent;
+		StoreKitManager.productPurchaseAwaitingConfirmationEvent -= productPurchaseAwaitingConfirmationEvent;
+		StoreKitManager.purchaseSuccessfulEvent -= purchaseSuccessfulEvent;
+		StoreKitManager.purchaseCancelledEvent -= purchaseCancelledEvent;
+		StoreKitManager.purchaseFailedEvent -= purchaseFailedEvent;
+		StoreKitManager.productListReceivedEvent -= productListReceivedEvent;
+		StoreKitManager.productListRequestFailedEvent -= productListRequestFailedEvent;
+		StoreKitManager.restoreTransactionsFailedEvent -= restoreTransactionsFailedEvent;
+		StoreKitManager.restoreTransactionsFinishedEvent -= restoreTransactionsFinishedEvent;
+		StoreKitManager.paymentQueueUpdatedDownloadsEvent -= paymentQueueUpdatedDownloadsEvent;
+	}
+	
+	
+	
+	void transactionUpdatedEvent( StoreKitTransaction transaction )
+	{
+		Debug.Log( "transactionUpdatedEvent: " + transaction );
+		
+	}
+	
+	
+	void productListReceivedEvent( List<StoreKitProduct> productList )
+	{
+		Debug.Log( "productListReceivedEvent. total products received: " + productList.Count );
+		
+		// print the products to the console
+		foreach( StoreKitProduct product in productList )
+			Debug.Log( product.ToString() + "\n" );
+	}
+	
+	
+	void productListRequestFailedEvent( string error )
+	{
+		Debug.Log( "productListRequestFailedEvent: " + error );
+	}
+	
+	
+	void purchaseFailedEvent( string error )
+	{
+		Debug.Log( "purchaseFailedEvent: " + error );
+	}
+	
+	
+	void purchaseCancelledEvent( string error )
+	{
+		Debug.Log( "purchaseCancelledEvent: " + error );
+	}
+	
+	
+	void productPurchaseAwaitingConfirmationEvent( StoreKitTransaction transaction )
+	{
+		Debug.Log( "productPurchaseAwaitingConfirmationEvent: " + transaction );
+	}
+	
+	
+	void purchaseSuccessfulEvent( StoreKitTransaction transaction )
+	{
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+
+		Debug.Log( "purchaseSuccessfulEvent: " + transaction );
+		
+		switch (transaction.productIdentifier) 
+		{
+		case "coin1":
+			
+			GameController.dustPoints += 10000;
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result1");
+			resultWindow.SetActive(true);
+			break;
+		case "coin2":
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result2");
+			resultWindow.SetActive(true);
+			// 보석 80개 주기 처리
+			GameController.dustPoints += 50000;
+			break;
+		case "coin3":
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result3");
+			resultWindow.SetActive(true);
+			// 보석 180개 주기 처리
+			GameController.dustPoints += 100000;
+			break;
+		case "coin4":
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Result4");
+			resultWindow.SetActive(true);
+			// "에러 관련 메시지 처리 "
+			GameController.dustPoints += 250000;
+			break;
+		case "VIP":
+			GameController.isVip = 1;
+			PlayerPrefs.SetInt ("isVip",GameController.isVip);
+			
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Product1Result");
+			resultWindow.SetActive(true);
+			
+			break;
+		case "wingman": 
+			
+			GameController.wingMercury = 1;
+			GameController.wingVenus = 1;
+			PlayerPrefs.SetInt("mercury", GameController.wingMercury);
+			PlayerPrefs.SetInt("venus", GameController.wingVenus);
+			PlayerController.Instance.UpdateWing();
+			
+			resultWindow.GetComponent<StoreResult>().result = thisLanguageManager.GetTextValue("Store.Product2Result");
+			resultWindow.SetActive(true);
+			break;
+		}
+	}
+	
+	
+	void restoreTransactionsFailedEvent( string error )
+	{
+		Debug.Log( "restoreTransactionsFailedEvent: " + error );
+	}
+	
+	
+	void restoreTransactionsFinishedEvent()
+	{
+		Debug.Log( "restoreTransactionsFinished" );
+	}
+	
+	
+	void paymentQueueUpdatedDownloadsEvent( List<StoreKitDownload> downloads )
+	{
+		Debug.Log( "paymentQueueUpdatedDownloadsEvent: " );
+		foreach( var dl in downloads )
+			Debug.Log( dl );
+	}
+
+
+#endif
+
 #if UNITY_ANDROID
 	// Use this for initialization
 	private bool isConnect;

@@ -1,11 +1,16 @@
 using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 using System.Collections.Generic;
-
+using Prime31;
+using SmartLocalization;
 
 public class StoreKitEventListener : MonoBehaviour
 {
 #if UNITY_IPHONE
+
+	public GameObject resultWindow;
+	public Text storeThanks;
+
 	void OnEnable()
 	{
 		// Listens to all the StoreKit events. All event listeners MUST be removed before this object is disposed!
@@ -42,6 +47,7 @@ public class StoreKitEventListener : MonoBehaviour
 	void transactionUpdatedEvent( StoreKitTransaction transaction )
 	{
 		Debug.Log( "transactionUpdatedEvent: " + transaction );
+
 	}
 
 	
@@ -82,6 +88,8 @@ public class StoreKitEventListener : MonoBehaviour
 	void purchaseSuccessfulEvent( StoreKitTransaction transaction )
 	{
 		Debug.Log( "purchaseSuccessfulEvent: " + transaction );
+
+
 	}
 	
 	

@@ -43121,17 +43121,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383afd6cbc0394c60b54212660df0331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultWindow: {fileID: 0}
-  welcome: {fileID: 0}
-  product1: {fileID: 0}
-  product1desc: {fileID: 0}
-  product2: {fileID: 0}
-  product2desc: {fileID: 0}
-  product3: {fileID: 0}
-  product4: {fileID: 0}
-  product5: {fileID: 0}
-  product6: {fileID: 0}
-  storeThanks: {fileID: 0}
+  resultWindow: {fileID: 1967980048}
+  welcome: {fileID: 237279615}
+  product1: {fileID: 1983820262}
+  product1desc: {fileID: 1467553443}
+  product2: {fileID: 155152359}
+  product2desc: {fileID: 1133808570}
+  product3: {fileID: 1140948624}
+  product4: {fileID: 1776719824}
+  product5: {fileID: 747160847}
+  product6: {fileID: 372444025}
+  storeThanks: {fileID: 1869226662}
 --- !u!114 &1403070355
 MonoBehaviour:
   m_ObjectHideFlags: 0
