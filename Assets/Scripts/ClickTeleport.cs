@@ -34,6 +34,8 @@ public class ClickTeleport : MonoBehaviour
 					GameController.distanceFromEarth += (GameController.engineSpeed * 10);
 					DialogManager.Instance.ColonyEvent();
 					animator.SetTrigger("blackhole");
+
+					AdmobManager.Instance.ShowBanner();
 				}
 			}
 		}

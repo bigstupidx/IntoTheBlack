@@ -4,7 +4,7 @@ using System.Collections;
 using System;
 using GooglePlayGames;
 using UnityEngine.SocialPlatforms;
-
+using SmartLocalization;
 
 public class GameController : MonoBehaviour 
 {
@@ -560,7 +560,8 @@ public class GameController : MonoBehaviour
 		fireLevel = 0;
 		fireModifier =1;
 		PlayerController.Instance.RefreshRotationValue();
-		NoticeManager.Instance.SetNotice("화재가 진압되었습니다.\n 정상 속도로 회복되었습니다.", 5);
+		LanguageManager thisLanguageManager = LanguageManager.Instance;
+		NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("fireOff"), 5);
 
 		RefreshShip();
 

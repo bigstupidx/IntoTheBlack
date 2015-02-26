@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>Sie haben die Uranus erreicht.</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>Das Feuer wurde unterdrückt. Die Schiff-Geschwindigkeit ist wiederhergestellt.</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>Das Feuer ist aufgetreten. Das Schiff verlangsamt. Hier können Sie einen Feuerlöscher.</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Sternbild</value>
 	</data>
@@ -162,7 +168,7 @@
 		<value>SNS</value>
 	</data>
 	<data name="Menu.Store" xml:space="preserve">
-		<value>Raum-Markt</value>
+		<value>Markt</value>
 	</data>
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>Upgrade</value>
@@ -287,28 +293,28 @@ Schiff Geschwindigkeit erhöht.</value>
 		<value>Drücken Sie zum Starten</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>Spezielle VIP-Ticket - 1 $</value>
+		<value>Spezielle VIP-Ticket - US$ 0,99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>Entfernen Sie AD und erhalten Sie Gulden 2 mal zu.</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>Venus, Mecury Package - 3 $</value>
+		<value>Venus, Mecury Paket - US$ 2,99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>Venus und Mecury Flügelmann um dein Raumschiff zu schützen erhalten Sie</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10.000 Gulden - 1 $</value>
+		<value>10.000 Gulden - 0,99$</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50.000 Gulden - 3 $</value>
+		<value>50.000 Gulden - 2.99$</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100.000 Gulden - 5 $</value>
+		<value>100.000 Gulden - 4,99$</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250.000 Gulden - 9 $</value>
+		<value>250.000 Gulden - 8.99$</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>Bist du sicher, wollen mit dem Spiel aufzuhören?</value>
@@ -360,6 +366,9 @@ Vielen Dank für Ihren Einkauf.</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Ja</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>Sie haben 3 Waffe Stufe, um es verwenden zu aktualisieren</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>Raum Wal ist pop. Halten Sie Cliking, um Münzen zu erhalten.</value>

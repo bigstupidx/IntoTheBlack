@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>Avete raggiunto l'Urano</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>Il fuoco è stato soppresso. La velocità della nave è recuperato.</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>L'incendio si è verificato. La nave rallenta. È possibile utilizzare un estintore.</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Costellazione</value>
 	</data>
@@ -287,28 +293,28 @@ Aumenta la velocità della nave.</value>
 		<value>Premere per avviare</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>Biglietto speciale VIP - 1 $</value>
+		<value>Speciale VIP Ticket - US$ 0,99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>Rimuovere annuncio e ottenere medaglie d'oro 2 volte.</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>Venere, Mecury pacchetto - 3 $</value>
+		<value>Venere, pacchetto Mecury - US$ 2,99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>È possibile ottenere Venere e Mecury wingman per proteggere la tua nave spaziale</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10.000 ori - 1 $</value>
+		<value>10.000 ori - 0,99$</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50.000 ori - 3 $</value>
+		<value>50.000 Ori - 2,99$</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100.000 ori - 5 $</value>
+		<value>100.000 ori - 4,99$</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250.000 ori - 9 $</value>
+		<value>250.000 ori - 8,99$</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>Sei sicuro che vogliono smettere di gioco?</value>
@@ -360,6 +366,9 @@ Grazie per il vostro acquisto.</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Sì</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>Bisogna aggiornare il livello 3 di arma per usarlo</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>Spazio balena è pop. Tenere cliking per ottenere monete.</value>

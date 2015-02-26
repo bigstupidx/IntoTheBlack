@@ -5,6 +5,27 @@ using UnityEngine.Advertisements;
 
 public class AdmobManager : MonoBehaviour 
 {
+	private static AdmobManager _instance;
+	
+	public static AdmobManager Instance
+	{
+		get
+		{
+			if(!_instance)
+			{
+				_instance = GameObject.FindObjectOfType(typeof(AdmobManager)) as AdmobManager;
+				if(!_instance)
+				{
+					//					GameObject container = new GameObject();
+					//					container.name = "GameControllerContainer";
+					//					_instance = container.AddComponent(typeof(GameController)) as GameController;
+				}
+			}
+			
+			return _instance;
+		}
+	}
+
 
 #if UNITY_EDITOR
 	string gameId = @"131624534";
@@ -35,6 +56,7 @@ public class AdmobManager : MonoBehaviour
 		if(GameController.isVip !=1)
 		{
 			StartCoroutine(BannerLoop());
+			Advertisement.Initialize (gameId);
 		}
 	}
 
@@ -52,22 +74,22 @@ public class AdmobManager : MonoBehaviour
 		yield return new WaitForSeconds(20f);
 
 				banner.Hide ();
-			if (GameController.isVip !=1)
-				Advertisement.Initialize (gameId);
 
 		while(GameController.isVip !=1)
 		{
-			yield return new WaitForSeconds(60f);
-				if(Advertisement.isReady() && GameController.isVip !=1)
-				{
-					Advertisement.Show();
-				}
 			yield return new WaitForSeconds(90f);
 				if (GameController.isVip !=1)
 					banner.Show();
 			yield return new WaitForSeconds(20f);
-
 				banner.Hide ();
+		}
+	}
+
+	public void ShowBanner()
+	{
+		if(Advertisement.isReady() && GameController.isVip !=1)
+		{
+			Advertisement.Show();
 		}
 	}
 }

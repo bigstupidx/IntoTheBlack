@@ -150,8 +150,14 @@ as much as 10 times the speed of the engine.</value>
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>You have reached the Uranus</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>The fire was suppressed. The ship speed is recoverd.</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>The fire occurred. The ship slows down. You can use a fire extinguisher.</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
-		<value>Constellation</value>
+		<value>Star Album</value>
 	</data>
 	<data name="Menu.Message" xml:space="preserve">
 		<value>Space Chat</value>
@@ -163,7 +169,7 @@ as much as 10 times the speed of the engine.</value>
 		<value>SNS</value>
 	</data>
 	<data name="Menu.Store" xml:space="preserve">
-		<value>Space Market</value>
+		<value>Store</value>
 	</data>
 	<data name="Menu.Upgrade" xml:space="preserve">
 		<value>Upgrade</value>
@@ -203,13 +209,14 @@ as much as 10 times the speed of the engine.</value>
 I am going to make better game at next time.</value>
 	</data>
 	<data name="Tutorial.1" xml:space="preserve">
-		<value>Time to start journey for human being's future.</value>
+		<value>A long trip has begun which will decide the future of mankind!!! Upgrade the space
+ship to go further.</value>
 	</data>
 	<data name="Tutorial.2" xml:space="preserve">
-		<value>Be careful asteroid. You can distroy by shot skill or shield skill</value>
+		<value> Be careful of asteroids coming toward you.</value>
 	</data>
 	<data name="Tutorial.3" xml:space="preserve">
-		<value>If you got fire, You can use extinguisher on right bottlm (red icon)</value>
+		<value>When the space ship is on fire it became slower. You can use a fire extinguisher</value>
 	</data>
 	<data name="UI.Accel" xml:space="preserve">
 		<value>times Accel</value>
@@ -288,28 +295,28 @@ Space ship speed increases.</value>
 		<value>Press to start</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>Special VIP Ticket  - 1 $</value>
+		<value>Special VIP Ticket  - US$ 0.99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>Remove AD and Get golds 2 times.</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>Venus, Mecury Package - 3 $</value>
+		<value>Venus, Mecury Package - US$ 2.99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>You can get Venus and Mecury wingman to protect your space ship</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10,000 golds - 1 $</value>
+		<value>10,000 golds - 0.99$</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50,000 golds - 3 $</value>
+		<value>50,000 golds - 2.99$</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100,000 golds - 5 $</value>
+		<value>100,000 golds - 4.99$</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250,000 golds - 9 $</value>
+		<value>250,000 golds - 8.99$</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>Are you sure want to quit game?</value>
@@ -363,6 +370,9 @@ Every calculation will be faster than normal time</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Yes</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>You have to upgrade 3 weapon level to use it</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>Space Whale is pop. Keep cliking to get coins.</value>

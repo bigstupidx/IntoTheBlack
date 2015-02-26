@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using PathologicalGames;
+using SmartLocalization;
 
 [System.Serializable]
 public class Boundary
@@ -135,12 +136,12 @@ public class PlayerController : MonoBehaviour
 			}
 
 			shieldTime = 100f;
-			shieldTimeText.text = string.Concat("보호막 : ON");
+			shieldTimeText.text = string.Concat("Shield : ON");
 		}
 		else
 		{
 			shieldTime -= Time.deltaTime;
-			shieldTimeText.text = string.Concat("보호막 : ", shieldTime.ToString("N0"), " 초");
+			shieldTimeText.text = string.Concat("Shield : ", shieldTime.ToString("N0"), " secs");
 		}
 
 		if (shieldTime <0)
@@ -446,7 +447,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (GameController.shotLevel < 3)
 		{
-			NoticeManager.Instance.SetNotice("무기 업그레이드 [3 레벨] 부터 사용 할 수 있습니다.", 2f);
+			LanguageManager thisLanguageManager = LanguageManager.Instance;
+			NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("WeaponWarning"), 2f);
 			return;
 		}
 

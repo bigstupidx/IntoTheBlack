@@ -150,6 +150,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>天王星に達しました。</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>火は抑制されました。船の速度は粒度です。</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>火災が発生しました。船を減速します。消火器を使用できます。</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>星座</value>
 	</data>
@@ -286,28 +292,28 @@
 		<value>タッチして起動します。</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>特別な VIP チケット - 1 $</value>
+		<value>特別な VIP チケット - 米国 $ 0.99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>広告を削除し、2 回の金目たるを取得します。</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>金星、Mecury パッケージ - 3 ドル</value>
+		<value>金星、Mecury パッケージ - 米国 $ 2.99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>あなたの宇宙船を保護するために金星、Mecury の僚機を得ることができます。</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10,000 金目たる - 1 $</value>
+		<value>10,000 金目たる - 米国 0.99</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50,000 金目たる - 3 ドル</value>
+		<value>50,000 金目たる - 米国 2.99</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100,000 金目たる - 5 ドル</value>
+		<value>100,000 金目たる - 米国 4.99</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250,000 金目たる - 9 ドル</value>
+		<value>250,000 金目たる - 米国 8.99</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>ゲームを終了してよろしいですか。</value>
@@ -358,6 +364,9 @@
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>はい</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>それを使用する 3 レベルの武器をアップグレードする必要があります。</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>宇宙クジラが登場している。続行をクリックしてコインを収集してください。</value>

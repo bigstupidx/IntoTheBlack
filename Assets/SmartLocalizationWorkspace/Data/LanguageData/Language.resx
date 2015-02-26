@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>You have got Uranus</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>fire Off</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>fre On</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Constellation</value>
 	</data>
@@ -360,5 +366,8 @@ Thanks for your purchase.</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>Space Whale is pop. Keep cliking to get coins.</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>You have to upgrade 3 weapon level to use it</value>
 	</data>
 </root>

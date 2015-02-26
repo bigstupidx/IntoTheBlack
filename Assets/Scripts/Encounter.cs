@@ -82,7 +82,7 @@ public class Encounter : MonoBehaviour
 			{
 				NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("Alien.Pop"), 5);
 				SpawnAlien();
-				spawnWaitTime = 30f;
+				spawnWaitTime = 45f;
 			}
 			yield return new WaitForSeconds(spawnWaitTime);//	yield return new WaitForSeconds(173);
 

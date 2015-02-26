@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>천왕성에 도달 했습니다.</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>화재가 모두 진압되었습니다. 정상 속도로 회복 합니다.</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>화재가 발생했습니다. 우주선 속도가 느려집니다. 오른족 소화기를 이용하여 진압할 수 있습니다.</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>별자리앨범</value>
 	</data>
@@ -362,6 +368,9 @@
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>예</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>무기를 3 레벨 이상 업그레이드 해야 합니다.</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>우주 고래가 나타났습니다. 계속 클릭해서 동전을 모으세요.</value>

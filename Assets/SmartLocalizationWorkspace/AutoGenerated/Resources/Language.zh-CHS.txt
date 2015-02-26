@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>天王星已经达到。</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>火被镇压了。船的速度是求婚。</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>火灾发生时。这艘船会减慢。您可以使用一个灭火器。</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>星座</value>
 	</data>
@@ -285,28 +291,28 @@
 		<value>按键开始</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>特别贵宾票制 1 元</value>
+		<value>VIP 特权 （广告删除金 2 x）-美国 $ 0.99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>删除广告并获得金牌 2 倍。</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>金星，汞封装类型-3 元</value>
+		<value>金星，汞包-美国 $ 2.99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>你可以得到金星和汞的僚机，以保护您的飞船</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10,000 枚金牌 — — 1 美元</value>
+		<value>10,000 枚金牌 —  美国 $ 0.99</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50,000 枚金牌 — — 3 元</value>
+		<value>50,000 枚金牌 —  美国 $2.99</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100,000 枚金牌 — — 5 美元</value>
+		<value>100,000 枚金牌  — 美国 $4.99</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250,000 枚金牌 — — 9 元</value>
+		<value>250,000 枚金牌 — 美国 $ 8.99</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>是否确实要退出游戏？</value>
@@ -356,6 +362,9 @@
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>是啊</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>您必须升级 3 要使用它的武器级别</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>空间鲸鱼已经出现。单击继续，请收集硬币。</value>

@@ -149,6 +149,12 @@
 	<data name="Event.Uranus" xml:space="preserve">
 		<value>Has alcanzado el Uranus</value>
 	</data>
+	<data name="fireOff" xml:space="preserve">
+		<value>El fuego fue suprimido. Velocidad de la nave es recoverd.</value>
+	</data>
+	<data name="fireOn" xml:space="preserve">
+		<value>El fuego se produjo. La nave se ralentiza. Puede utilizar un extintor de incendios.</value>
+	</data>
 	<data name="Menu.Album" xml:space="preserve">
 		<value>Constelación</value>
 	</data>
@@ -287,28 +293,28 @@ Aumentos de la velocidad de la nave.</value>
 		<value>Presione para iniciar el</value>
 	</data>
 	<data name="UI.Product1" xml:space="preserve">
-		<value>Boleto VIP especial - 1 $</value>
+		<value>Boleto VIP especial - US$ 0,99</value>
 	</data>
 	<data name="UI.Product1Desc" xml:space="preserve">
 		<value>Eliminar anuncio y conseguir medallas de oro dos veces.</value>
 	</data>
 	<data name="UI.Product2" xml:space="preserve">
-		<value>Venus, Mecury Package - 3 $</value>
+		<value>Venus, Mecury Package - US$ 2,99</value>
 	</data>
 	<data name="UI.Product2Desc" xml:space="preserve">
 		<value>Puede obtener Venus y Mecury escolta para proteger tu nave espacial</value>
 	</data>
 	<data name="UI.Product3" xml:space="preserve">
-		<value>10.000 oros - 1 $</value>
+		<value>10.000 oros - 0,99$</value>
 	</data>
 	<data name="UI.Product4" xml:space="preserve">
-		<value>50.000 oros - 3 $</value>
+		<value>50.000 oros - 2,99$</value>
 	</data>
 	<data name="UI.Product5" xml:space="preserve">
-		<value>100.000 oros - 5 $</value>
+		<value>100.000 oros - 4.99$</value>
 	</data>
 	<data name="UI.Product6" xml:space="preserve">
-		<value>250.000 oros - 9 $</value>
+		<value>250.000 oros - 8.99$</value>
 	</data>
 	<data name="UI.QuitGame" xml:space="preserve">
 		<value>¿Estás seguro de que desea dejar juego?</value>
@@ -360,6 +366,9 @@ Gracias por su compra.</value>
 	</data>
 	<data name="UI.Yes" xml:space="preserve">
 		<value>Sí</value>
+	</data>
+	<data name="WeaponWarning" xml:space="preserve">
+		<value>Tienes que actualizar 3 nivel de arma para usarlo</value>
 	</data>
 	<data name="Whale.Pop" xml:space="preserve">
 		<value>Espacio ballena es pop. Mantenga cliking para conseguir monedas.</value>

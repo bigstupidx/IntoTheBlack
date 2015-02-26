@@ -494,19 +494,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.20000005
-  m_Text: "\uC624\uB798\uC624\uB798\uC804 \uBA40\uB9AC\uBA40\uB9AC\uC5D0\uC11C...\n\n\uC81C\uC791\uCD1D\uAD04
-    : \uAE40\uACBD\uD0DC\n\n\uAE30\uD68D : \uAE40\uACBD\uD0DC\n\uD504\uB85C\uADF8\uB7A8
-    : \uAE40\uACBD\uD0DC\n\uC544\uD2B8 : \uAE40\uACBD\uD0DC\n\n\uAC1C\uBC1C\uC5D0
-    \uB3C4\uC6C0 \uC8FC\uC2E0 \uBD84\uB4E4  \n\n\uC778\uB514 \uAC1C\uBC1C\uC758 \uCC98\uC74C\uACFC
-    \uB05D : \uC190\uC720\uC9C4 (\uBC30\uACE0\uD508 \uAC1C\uBC1C\uC790)\n\uD0D0\uC0AC\uC120
-    \uBAA8\uB378\uB9C1 : \uC548\uD604\uD638 (\uAC1C\uB5A1\uC8FC\uBB38 \uCC30\uB5A1\uC678\uC8FC)\n\uB300\uC0AC
-    : \uAC15\uACBD\uC6D0 (\uAC1C\uB4DC\uB9BD \uC885\uACB0\uC790)\n\uD6A8\uACFC\uC74C
-    : \uBC15\uC900\uC624 (\uC5D4\uC528 \uC18C\uD504\uD2B8 \uC57C\uAD6C\uC120\uC218)\nQA
-    : \uC774\uCC3D\uD6C8 (\uB9C8\uB204\uB77C \uC798 \uC5BB\uC740 \uBC31\uC218)\nQA
-    : \uCC9C\uBBFC\uC601 (\uC798\uB09C \uB9C8\uB204\uB77C)\nMusic : YouTube Royalty
-    Free, http://www.bensound.com\n\n\uC720\uB2C8\uD2F0 \uC5B4\uC14B \uC2A4\uD1A0\uC5B4\uC758
-    \uAC1C\uBC1C\uC790\uB4E4\n\n\nSpecial Thanks\n\n\uD504\uB85C\uADF8\uB7A8 \uC790\uBB38
-    : \uCC44\uC885\uB4DD (\uC288\uD37C\uD504\uB85C\uADF8\uB798\uBA38)\n\uC6B0\uC8FC\uC640
+  m_Text: "A long time ago in a galaxy far, far away...\n\nProducer : Kyle Kim (Kdragon)\n\nGame
+    Design : Kyle KIm\nProgram : Kyle Kim\nGame Graphic : Kyle Kim\n\nConstributer\n\n\uC778\uB514
+    \uAC1C\uBC1C\uC758 \uCC98\uC74C\uACFC \uB05D : \uC190\uC720\uC9C4 (\uBC30\uACE0\uD508
+    \uAC1C\uBC1C\uC790)\n\uD0D0\uC0AC\uC120 \uBAA8\uB378\uB9C1 : \uC548\uD604\uD638
+    (\uAC1C\uB5A1\uC8FC\uBB38 \uCC30\uB5A1\uC678\uC8FC)\n\uB300\uC0AC : \uAC15\uACBD\uC6D0
+    (\uAC1C\uB4DC\uB9BD \uC885\uACB0\uC790)\n\uD6A8\uACFC\uC74C : \uBC15\uC900\uC624
+    (\uC5D4\uC528 \uC18C\uD504\uD2B8 \uC57C\uAD6C\uC120\uC218)\n\uC601\uBB38\uBC88\uC5ED
+    : Duri Ham (English Teacher!!)\nQA : \uC774\uCC3D\uD6C8 (\uB9C8\uB204\uB77C \uC798
+    \uC5BB\uC740 \uBC31\uC218)\nQA : \uCC9C\uBBFC\uC601 (\uC798\uB09C \uB9C8\uB204\uB77C)\n\nMusic
+    : YouTube Royalty Free, http://www.bensound.com\n\nDevelopers on Unity Asset Store\n\n\nSpecial
+    Thanks\n\n\uD504\uB85C\uADF8\uB7A8 \uC790\uBB38 : \uCC44\uC885\uB4DD (\uC288\uD37C\uD504\uB85C\uADF8\uB798\uBA38)\n\uC6B0\uC8FC\uC640
     \uBCC4\uC5D0 \uB300\uD55C \uAFC8 : \uC2E0\uAC15\uBE44 (\uC6B8\uD2B8\uB77C \uAE30\uD68D\uC790)\n\uD504\uB85C\uADF8\uB7A8\uC5D0
     \uADF8\uB2E5 \uB3C4\uC6C0 \uC548\uB418\uC5C8\uC9C0\uB9CC : \uC1A1\uC7AC\uACBD\n\uAC1C\uBC1C\uBCD1
     \uAC78\uB838\uB124 : \uBC15\uC0C1\uC21C (\uC778\uC0DD\uC774 GTA \uD0DD\uC2DC\uAE30\uC0AC)\n\uC220
@@ -4861,7 +4859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &126732318
 Transform:
   m_ObjectHideFlags: 0
@@ -38465,7 +38463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1271422017
 Transform:
   m_ObjectHideFlags: 0
@@ -38506,7 +38504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1279259998
 Transform:
   m_ObjectHideFlags: 0

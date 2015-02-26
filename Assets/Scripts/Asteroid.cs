@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using PathologicalGames;
+using SmartLocalization;
 
 public class Asteroid : MonoBehaviour 
 {
@@ -60,7 +61,8 @@ public class Asteroid : MonoBehaviour
 
 			if (!PlayerController.isShield)
 			{
-				NoticeManager.Instance.SetNotice("충격으로 탐사선에 화재가 발생했습니다.\n 우주 샤워로 화재를 진압하세요 (소화기가 소모 됩니다.)",5);
+				LanguageManager thisLanguageManager = LanguageManager.Instance;
+				NoticeManager.Instance.SetNotice(thisLanguageManager.GetTextValue("fireOn"),5);
 				SpawnManager.Instance.PopDust(transform.position);
 				GameController.Instance.SlowMotion();
 			}
