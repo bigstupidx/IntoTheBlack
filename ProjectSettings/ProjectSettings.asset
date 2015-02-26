@@ -8,6 +8,7 @@ PlayerSettings:
   defaultScreenOrientation: 0
   targetDevice: 2
   targetGlesGraphics: 1
+  targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Kdragon Workshop
@@ -72,7 +73,8 @@ PlayerSettings:
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: d6d69ffc6806d40debf72cf5a516c536
   iPhoneBundleVersion: 1.0.7
-  AndroidBundleVersionCode: 107
+  iPhoneShortBundleVersion: 1.0
+  AndroidBundleVersionCode: 1070
   AndroidMinSdkVersion: 13
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -101,6 +103,15 @@ PlayerSettings:
   iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
   iPadHighResLandscapeSplashScreen: {fileID: 0}
+  iOSLaunchScreenType: 0
+  iOSLaunchScreenPortrait: {fileID: 0}
+  iOSLaunchScreenLandscape: {fileID: 0}
+  iOSLaunchScreenBackgroundColor:
+    serializedVersion: 2
+    rgba: 0
+  iOSLaunchScreenFillPct: 100
+  iOSLaunchScreenSize: 100
+  iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   AndroidKeystoreName: IntotheBlack.keystore

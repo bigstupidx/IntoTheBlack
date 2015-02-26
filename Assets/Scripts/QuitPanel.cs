@@ -21,9 +21,28 @@ public class QuitPanel : MonoBehaviour
 		Yes.text = thisLanguageManager.GetTextValue("UI.Yes");
 		No.text = thisLanguageManager.GetTextValue("UI.No");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnEnable()
+	{
+		Time.timeScale = 0;
 	}
+
+	void Update()
+	{
+		if ( Application.platform == RuntimePlatform.Android )
+		{
+			if( Input.GetKeyDown( KeyCode.Escape ))
+			{ 
+				gameObject.SetActive(false);
+			}
+		}
+	}
+
+
+	void OnDisable()
+	{
+		Time.timeScale = 1;
+	}
+	// Update is called once per frame
+
 }
